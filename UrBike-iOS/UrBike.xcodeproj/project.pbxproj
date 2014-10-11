@@ -15,20 +15,11 @@
 		F0454D9519E9378D004DE0F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0454D9419E9378D004DE0F3 /* Images.xcassets */; };
 		F0454D9819E9378D004DE0F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0454D9619E9378D004DE0F3 /* LaunchScreen.xib */; };
 		F0454DA419E9378D004DE0F3 /* UrBikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454DA319E9378D004DE0F3 /* UrBikeTests.m */; };
-		F0454EC519E93B07004DE0F3 /* GoogleMapsM4B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EC419E93B07004DE0F3 /* GoogleMapsM4B.framework */; };
 		F0454EC719E93B35004DE0F3 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0454EC619E93B35004DE0F3 /* GoogleMaps.bundle */; };
 		F0454EC919E93B7B004DE0F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EC819E93B7B004DE0F3 /* AVFoundation.framework */; };
 		F0454ECB19E93B84004DE0F3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ECA19E93B84004DE0F3 /* CoreData.framework */; };
 		F0454ECD19E93B8A004DE0F3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ECC19E93B8A004DE0F3 /* CoreLocation.framework */; };
-		F0454ECF19E93B94004DE0F3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ECE19E93B94004DE0F3 /* CoreText.framework */; };
-		F0454ED119E93B9A004DE0F3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ED019E93B9A004DE0F3 /* GLKit.framework */; };
-		F0454ED319E93BA3004DE0F3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ED219E93BA3004DE0F3 /* ImageIO.framework */; };
-		F0454ED519E93BB1004DE0F3 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ED419E93BB1004DE0F3 /* libc++.dylib */; };
-		F0454ED719E93BBD004DE0F3 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ED619E93BBD004DE0F3 /* libicucore.dylib */; };
-		F0454ED919E93BC7004DE0F3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ED819E93BC7004DE0F3 /* libz.dylib */; };
-		F0454EDB19E93BCD004DE0F3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EDA19E93BCD004DE0F3 /* OpenGLES.framework */; };
 		F0454EDD19E93BD4004DE0F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EDC19E93BD4004DE0F3 /* QuartzCore.framework */; };
-		F0454EDF19E93BE1004DE0F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EDE19E93BE1004DE0F3 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,19 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0454EDF19E93BE1004DE0F3 /* SystemConfiguration.framework in Frameworks */,
 				F0454EDD19E93BD4004DE0F3 /* QuartzCore.framework in Frameworks */,
-				F0454EDB19E93BCD004DE0F3 /* OpenGLES.framework in Frameworks */,
-				F0454ED919E93BC7004DE0F3 /* libz.dylib in Frameworks */,
-				F0454ED719E93BBD004DE0F3 /* libicucore.dylib in Frameworks */,
-				F0454ED519E93BB1004DE0F3 /* libc++.dylib in Frameworks */,
-				F0454ED319E93BA3004DE0F3 /* ImageIO.framework in Frameworks */,
-				F0454ED119E93B9A004DE0F3 /* GLKit.framework in Frameworks */,
-				F0454ECF19E93B94004DE0F3 /* CoreText.framework in Frameworks */,
 				F0454ECD19E93B8A004DE0F3 /* CoreLocation.framework in Frameworks */,
 				F0454ECB19E93B84004DE0F3 /* CoreData.framework in Frameworks */,
 				F0454EC919E93B7B004DE0F3 /* AVFoundation.framework in Frameworks */,
-				F0454EC519E93B07004DE0F3 /* GoogleMapsM4B.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +433,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,6 +451,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,6 +511,7 @@
 				F0454DA919E9378D004DE0F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0454DAA19E9378D004DE0F3 /* Build configuration list for PBXNativeTarget "UrBikeTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +520,7 @@
 				F0454DAC19E9378D004DE0F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
