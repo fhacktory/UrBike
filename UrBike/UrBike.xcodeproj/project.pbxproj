@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A520AF9219E9819A0073D96B /* addressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF8F19E9819A0073D96B /* addressObject.m */; };
+		A520AF9319E9819A0073D96B /* addressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF9119E9819A0073D96B /* addressResolver.m */; };
 		A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E5E1619E975A4004237D3 /* MapKit.framework */; };
 		A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */; };
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
@@ -17,7 +19,6 @@
 		A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */; };
 		A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */; };
 		A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */; };
-		A5FB073B19E96A90008FEF01 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A5FB073A19E96A90008FEF01 /* LICENCE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A520AF8E19E9819A0073D96B /* addressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressObject.h; path = Model/AddressResolver/addressObject.h; sourceTree = "<group>"; };
+		A520AF8F19E9819A0073D96B /* addressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressObject.m; path = Model/AddressResolver/addressObject.m; sourceTree = "<group>"; };
+		A520AF9019E9819A0073D96B /* addressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressResolver.h; path = Model/AddressResolver/addressResolver.h; sourceTree = "<group>"; };
+		A520AF9119E9819A0073D96B /* addressResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressResolver.m; path = Model/AddressResolver/addressResolver.m; sourceTree = "<group>"; };
 		A55E5E1619E975A4004237D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationToolBox.swift; path = Tools/Location/LocationToolBox.swift; sourceTree = "<group>"; };
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A520AF8D19E981820073D96B /* AddressResolver */ = {
+			isa = PBXGroup;
+			children = (
+				A520AF8E19E9819A0073D96B /* addressObject.h */,
+				A520AF8F19E9819A0073D96B /* addressObject.m */,
+				A520AF9019E9819A0073D96B /* addressResolver.h */,
+				A520AF9119E9819A0073D96B /* addressResolver.m */,
+			);
+			name = AddressResolver;
+			sourceTree = "<group>";
+		};
 		A55E5E1819E975A9004237D3 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 		A5BDA78D19E954D900481977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A520AF8D19E981820073D96B /* AddressResolver */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -300,7 +317,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5FB073B19E96A90008FEF01 /* LICENCE in Resources */,
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
 			);
@@ -323,6 +339,8 @@
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
 				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
+				A520AF9219E9819A0073D96B /* addressObject.m in Sources */,
+				A520AF9319E9819A0073D96B /* addressResolver.m in Sources */,
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
 				A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */,
 				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
