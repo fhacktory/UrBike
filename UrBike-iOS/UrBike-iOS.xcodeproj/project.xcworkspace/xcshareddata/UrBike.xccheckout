@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B8FABF7D-B152-40E3-810E-ECFADA6F58BC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UrBike</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8EFC55B1C2B08E47990708231049130DF9D2068A</key>
+		<string>https://github.com/fhacktory/UrBike.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UrBike/UrBike.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8EFC55B1C2B08E47990708231049130DF9D2068A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fhacktory/UrBike.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8EFC55B1C2B08E47990708231049130DF9D2068A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8EFC55B1C2B08E47990708231049130DF9D2068A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UrBike</string>
+		</dict>
+	</array>
+</dict>
+</plist>
