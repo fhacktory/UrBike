@@ -34,7 +34,7 @@
         android:singleLine="true"/>
     <ImageButton
         android:id="@+id/button_ok_1"
-        android:src="@drawable/check"
+        android:src="@drawable/checkmark"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_landing"
         android:layout_width="match_parent"

@@ -10,6 +10,9 @@
     <string name="destination">Destination</string>
     <string name="transport_mode">Mode de transport</string>
     <string name="radio_1">"J'ai mon vélo"</string>
-    <string name="radio_2">"J'ai déja mon vélo"</string>
+    <string name="radio_1_content">Indiquer moi juste comment arriver à ma destination.</string>
+    <string name="radio_2">"J'ai besoin mon vélo"</string>
+    <string name="radio_2_content">Trouvez moi le vélo en libre service le plus proche</string>
     <string name="radio_3">"Je dois déposer mon vélo"</string>
+    <string name="radio_3_content">Trouvez moi la station libre la plus proche</string>
 </resources>

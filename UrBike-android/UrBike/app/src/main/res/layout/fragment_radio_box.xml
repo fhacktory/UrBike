@@ -22,54 +22,112 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/gray_separator"/>
-    <RadioButton
-        android:layout_marginTop="10dp"
-        android:id="@+id/radio_1"
-        android:checked="true"
-        android:background="@drawable/radiobutton_custom"
-        style="@style/RadioButtonStyle"
-        android:layout_marginBottom="75dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal" /><!--
-    <RadioGroup
+    <LinearLayout
+        android:id="@+id/linear_radio_1"
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
         android:layout_below="@+id/separator"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/button_ok_2">
-       <RadioButton
-            android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/radio_1"
             android:checked="true"
+            android:layout_marginTop="10dp"
             android:background="@drawable/radiobutton_custom"
             style="@style/RadioButtonStyle"
-            android:layout_marginBottom="75dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_horizontal" />
-        <RadioButton
-            android:id="@+id/radio_2"
-            android:background="@drawable/radiobutton_custom"
-            style="@style/RadioButtonStyle"
-            android:layout_marginBottom="75dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal" />
+             />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:typeface="sans"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title_radiobutton"
+            style="@style/TitleRadioButton"
+            android:id="@+id/title_radio_1"
+            android:text="@string/radio_1"/>
+        <TextView
+            style="@style/TitleRadioButton"
+            android:id="@+id/content_radio_1"
+            android:text="@string/radio_1_content"/>
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_radio_2"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/linear_radio_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <RadioButton
-            android:id="@+id/radio_3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/radio_2"
+            android:checked="false"
+            android:layout_marginTop="10dp"
             android:background="@drawable/radiobutton_custom"
             style="@style/RadioButtonStyle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="center_horizontal" />
-    </RadioGroup>-->
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:typeface="sans"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title_radiobutton"
+            style="@style/TitleRadioButton"
+            android:id="@+id/title_radio_2"
+            android:text="@string/radio_2"/>
+        <TextView
+            style="@style/TitleRadioButton"
+            android:id="@+id/content_radio_2"
+            android:text="@string/radio_1_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_radio_3"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/linear_radio_2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/radio_3"
+            android:checked="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radiobutton_custom"
+            style="@style/RadioButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:typeface="sans"
+            android:textAllCaps="true"
+            android:textSize="@dimen/title_radiobutton"
+            style="@style/TitleRadioButton"
+            android:id="@+id/title_radio_3"
+            android:text="@string/radio_3"/>
+        <TextView
+            style="@style/TitleRadioButton"
+            android:id="@+id/content_radio_3"
+            android:text="@string/radio_1_content"/>
+
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/button_ok_2"
-        android:src="@drawable/check"
+        android:src="@drawable/checkmark"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_landing"
         android:layout_width="match_parent"

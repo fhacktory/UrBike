@@ -4,5 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="intro_size">20sp</dimen>
     <dimen name="title_transport">30sp</dimen>
+    <dimen name="title_radiobutton">20sp</dimen>
     <dimen name="below_logo">50dp</dimen>
 </resources>
