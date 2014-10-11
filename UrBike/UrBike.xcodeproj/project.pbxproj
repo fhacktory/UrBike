@@ -132,7 +132,6 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
-				F0D1442219E982D500DE1213 /* AFNetworking */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
 				A5BDA76719E954B100481977 /* Products */,
@@ -151,6 +150,7 @@
 		A5BDA76819E954B100481977 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				F0D1442219E982D500DE1213 /* AFNetworking */,
 				A55E5E1819E975A9004237D3 /* Framework */,
 				A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */,
 				A5FB072C19E95B22008FEF01 /* Tools */,
@@ -289,7 +289,8 @@
 				F0D1443419E982D500DE1213 /* AFURLSessionManager.h */,
 				F0D1443519E982D500DE1213 /* AFURLSessionManager.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = ../AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
