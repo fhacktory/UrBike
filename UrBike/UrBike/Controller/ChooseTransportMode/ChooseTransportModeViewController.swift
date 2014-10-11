@@ -26,7 +26,7 @@ class ChooseTransportModeViewController: UIViewController {
     }
     
     @IBAction func goToMapView(sender: AnyObject) {
-        
+        self.performSegueWithIdentifier("showItinaryView", sender: self)
     }
 
     @IBAction func chooseMode(sender: AnyObject) {
