@@ -62,6 +62,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ek5-dc-axX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-kg-Ll1">
+                                <rect key="frame" x="0.0" y="583" width="375" height="84"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="check.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_map.png" translatesAutoresizingMaskIntoConstraints="NO" id="puL-oa-RhY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="521"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CZF-bG-P9g"/>
@@ -73,4 +85,8 @@
             <point key="canvasLocation" x="489.5" y="81.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background_map.png" width="640" height="1136"/>
+        <image name="check.png" width="32" height="32"/>
+    </resources>
 </document>
