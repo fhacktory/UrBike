@@ -12,7 +12,12 @@ class SplashScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var addr = getNearBikes();
+        var lat = 45.757150
+        var lon = 4.842739
+        addr.getNearBikes(lat, lon: lon)
+//        var addr = addressResolver()
+//        addr.getAddress("61rueliberte")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -28,6 +28,10 @@
 		F0D1443C19E982D500DE1213 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443119E982D500DE1213 /* AFURLRequestSerialization.m */; };
 		F0D1443D19E982D500DE1213 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443319E982D500DE1213 /* AFURLResponseSerialization.m */; };
 		F0D1443E19E982D500DE1213 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443519E982D500DE1213 /* AFURLSessionManager.m */; };
+		F0D1444119E9918800DE1213 /* getNearBikes.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444019E9918800DE1213 /* getNearBikes.m */; };
+		F0D1444419E9968E00DE1213 /* nearBikesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444319E9968E00DE1213 /* nearBikesObject.m */; };
+		F0D1444B19E9A50E00DE1213 /* getNearStations.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444A19E9A50E00DE1213 /* getNearStations.m */; };
+		F0D1444E19E9A53000DE1213 /* nearStationsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444D19E9A53000DE1213 /* nearStationsObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,14 @@
 		F0D1443319E982D500DE1213 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		F0D1443419E982D500DE1213 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		F0D1443519E982D500DE1213 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F0D1443F19E9918800DE1213 /* getNearBikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getNearBikes.h; sourceTree = "<group>"; };
+		F0D1444019E9918800DE1213 /* getNearBikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getNearBikes.m; sourceTree = "<group>"; };
+		F0D1444219E9968E00DE1213 /* nearBikesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearBikesObject.h; sourceTree = "<group>"; };
+		F0D1444319E9968E00DE1213 /* nearBikesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearBikesObject.m; sourceTree = "<group>"; };
+		F0D1444919E9A50E00DE1213 /* getNearStations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getNearStations.h; sourceTree = "<group>"; };
+		F0D1444A19E9A50E00DE1213 /* getNearStations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getNearStations.m; sourceTree = "<group>"; };
+		F0D1444C19E9A53000DE1213 /* nearStationsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearStationsObject.h; sourceTree = "<group>"; };
+		F0D1444D19E9A53000DE1213 /* nearStationsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearStationsObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +117,9 @@
 		A520AF8D19E981820073D96B /* AddressResolver */ = {
 			isa = PBXGroup;
 			children = (
-				A520AF8E19E9819A0073D96B /* addressObject.h */,
-				A520AF8F19E9819A0073D96B /* addressObject.m */,
-				A520AF9019E9819A0073D96B /* addressResolver.h */,
-				A520AF9119E9819A0073D96B /* addressResolver.m */,
+				F0D1444819E9A4E000DE1213 /* nearStations */,
+				F0D1444519E9A2F100DE1213 /* nearBikes */,
+				F0D1444719E9A3D200DE1213 /* address */,
 			);
 			name = AddressResolver;
 			sourceTree = "<group>";
@@ -292,6 +303,39 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		F0D1444519E9A2F100DE1213 /* nearBikes */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1443F19E9918800DE1213 /* getNearBikes.h */,
+				F0D1444019E9918800DE1213 /* getNearBikes.m */,
+				F0D1444219E9968E00DE1213 /* nearBikesObject.h */,
+				F0D1444319E9968E00DE1213 /* nearBikesObject.m */,
+			);
+			name = nearBikes;
+			sourceTree = "<group>";
+		};
+		F0D1444719E9A3D200DE1213 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				A520AF8E19E9819A0073D96B /* addressObject.h */,
+				A520AF8F19E9819A0073D96B /* addressObject.m */,
+				A520AF9019E9819A0073D96B /* addressResolver.h */,
+				A520AF9119E9819A0073D96B /* addressResolver.m */,
+			);
+			name = address;
+			sourceTree = "<group>";
+		};
+		F0D1444819E9A4E000DE1213 /* nearStations */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1444919E9A50E00DE1213 /* getNearStations.h */,
+				F0D1444A19E9A50E00DE1213 /* getNearStations.m */,
+				F0D1444C19E9A53000DE1213 /* nearStationsObject.h */,
+				F0D1444D19E9A53000DE1213 /* nearStationsObject.m */,
+			);
+			name = nearStations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,7 +440,10 @@
 				F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */,
+				F0D1444E19E9A53000DE1213 /* nearStationsObject.m in Sources */,
+				F0D1444419E9968E00DE1213 /* nearBikesObject.m in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
+				F0D1444B19E9A50E00DE1213 /* getNearStations.m in Sources */,
 				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
 				F0D1443819E982D500DE1213 /* AFHTTPSessionManager.m in Sources */,
 				A520AF9219E9819A0073D96B /* addressObject.m in Sources */,
@@ -404,6 +451,7 @@
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
 				F0D1443A19E982D500DE1213 /* AFSecurityPolicy.m in Sources */,
 				A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */,
+				F0D1444119E9918800DE1213 /* getNearBikes.m in Sources */,
 				F0D1443C19E982D500DE1213 /* AFURLRequestSerialization.m in Sources */,
 				F0D1443919E982D500DE1213 /* AFNetworkReachabilityManager.m in Sources */,
 				F0D1443D19E982D500DE1213 /* AFURLResponseSerialization.m in Sources */,

@@ -4,3 +4,6 @@
 
 
 #import "Reachability.h"
+#import "addressObject.h"
+#import "addressResolver.h"
+#import "getNearBikes.h"

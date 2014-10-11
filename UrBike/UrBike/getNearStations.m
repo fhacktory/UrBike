@@ -1,13 +1,13 @@
 //
-//  adressObject.m
+//  getNearStations.m
 //  UrBike
 //
 //  Created by Apollo on 11/10/14.
 //  Copyright (c) 2014 UrBike. All rights reserved.
 //
 
-#import "addressObject.h"
+#import "getNearStations.h"
 
-@implementation addressObject
+@implementation getNearStations
 
 @end

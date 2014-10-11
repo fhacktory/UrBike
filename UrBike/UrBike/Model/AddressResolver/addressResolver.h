@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "AFHTTPRequestOperation.h"
 
-@interface adressResolver : NSObject
+@interface addressResolver : NSObject
 
 @property (strong, nonatomic) NSMutableString *baseRequest;
 @property (strong, nonatomic) NSMutableDictionary *results;
-@property (strong, nonatomic) NSMutableArray *adressArray;
+@property (strong, nonatomic) NSMutableSet *addressArray;
 
+-(void)parseData;
 -(void)getAddress:(NSString*)baseAdress;
 - (void)addObjectToArray:(NSNumber *)latitude curLongitude:(NSNumber *)longitude address:(NSString *)address city:(NSString *)city;
-
+-(void)testAddress;
 @end

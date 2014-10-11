@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface adressObject : NSObject
+@interface addressObject : NSObject
 
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSString *city;
