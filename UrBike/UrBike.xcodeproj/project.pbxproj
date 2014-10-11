@@ -88,6 +88,7 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
+				F0454F4219E96220004DE0F3 /* Library */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
 				A5BDA76719E954B100481977 /* Products */,
@@ -165,6 +166,7 @@
 		A5BDA78D19E954D900481977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F0454F4B19E964CA004DE0F3 /* AdressResolverAPI */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -320,7 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0454F4A19E964C0004DE0F3 /* addressObject.m in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
+				F0454F3D19E96212004DE0F3 /* AFSecurityPolicy.m in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
 				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
