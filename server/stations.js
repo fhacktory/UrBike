@@ -3,7 +3,7 @@ var _ = require("lodash");
 var jcdApi = require("./jcdApi");
 var config = require("./config.js");
 
-mongoose.connect('mongodb://localhost/urbike');
+mongoose.connect(config.mongoUri);
 
 var Schema = mongoose.Schema;
 
