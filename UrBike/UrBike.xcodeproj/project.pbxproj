@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E5E1619E975A4004237D3 /* MapKit.framework */; };
+		A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */; };
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
 		A5BDA77119E954B100481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA76F19E954B100481977 /* Main.storyboard */; };
 		A5BDA77319E954B100481977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA77219E954B100481977 /* Images.xcassets */; };
@@ -14,6 +16,8 @@
 		A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073019E95C4C008FEF01 /* Reachability.m */; };
 		A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */; };
 		A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */; };
+		A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */; };
+		A5FB073B19E96A90008FEF01 /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = A5FB073A19E96A90008FEF01 /* LICENCE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A55E5E1619E975A4004237D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationToolBox.swift; path = Tools/Location/LocationToolBox.swift; sourceTree = "<group>"; };
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA76A19E954B100481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BDA76B19E954B100481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		A5FB073019E95C4C008FEF01 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Tools/Reachability/Reachability.m; sourceTree = "<group>"; };
 		A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityToolBox.swift; path = Tools/Reachability/ReachabilityToolBox.swift; sourceTree = "<group>"; };
 		A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Controller/SplashScreen/SplashScreenViewController.swift; sourceTree = "<group>"; };
+		A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		A5FB073A19E96A90008FEF01 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A55E5E1819E975A9004237D3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A55E5E1619E975A4004237D3 /* MapKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		A55E5E1919E97764004237D3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 		A5BDA76819E954B100481977 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				A55E5E1819E975A9004237D3 /* Framework */,
 				A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */,
 				A5FB072C19E95B22008FEF01 /* Tools */,
 				A5BDA78F19E954EA00481977 /* Assets */,
@@ -131,6 +157,7 @@
 		A5BDA78C19E954D600481977 /* Github */ = {
 			isa = PBXGroup;
 			children = (
+				A5FB073C19E96A95008FEF01 /* SCLAlertView */,
 			);
 			name = Github;
 			sourceTree = "<group>";
@@ -168,6 +195,7 @@
 		A5FB072C19E95B22008FEF01 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A55E5E1919E97764004237D3 /* Location */,
 				A5FB072D19E95C3F008FEF01 /* Reachability */,
 			);
 			name = Tools;
@@ -181,6 +209,15 @@
 				A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		A5FB073C19E96A95008FEF01 /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB073A19E96A90008FEF01 /* LICENCE */,
+				A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */,
+			);
+			name = SCLAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FB073B19E96A90008FEF01 /* LICENCE in Resources */,
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
 			);
@@ -284,7 +322,9 @@
 			files = (
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
+				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
+				A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */,
 				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
