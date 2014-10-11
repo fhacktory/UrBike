@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.app.urbike.urbike.Fragment.RadioBox">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center|top"
+        android:id="@+id/transport_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_transport"
+        android:textColor="@color/gray_title"
+        android:text="@string/transport_mode" />
+    <View
+        android:id="@+id/separator"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/transport_mode"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_separator"/>
+    <RadioButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio_1"
+        android:checked="true"
+        android:background="@drawable/radiobutton_custom"
+        style="@style/RadioButtonStyle"
+        android:layout_marginBottom="75dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" /><!--
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/separator"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_ok_2">
+       <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/radio_1"
+            android:checked="true"
+            android:background="@drawable/radiobutton_custom"
+            style="@style/RadioButtonStyle"
+            android:layout_marginBottom="75dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" />
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:background="@drawable/radiobutton_custom"
+            style="@style/RadioButtonStyle"
+            android:layout_marginBottom="75dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:background="@drawable/radiobutton_custom"
+            style="@style/RadioButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" />
+    </RadioGroup>-->
+
+    <ImageButton
+        android:id="@+id/button_ok_2"
+        android:src="@drawable/check"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_landing"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+</RelativeLayout>
