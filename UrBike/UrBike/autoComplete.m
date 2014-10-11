@@ -15,7 +15,11 @@
 -(void)getAddress:(NSString *)baseAdress
 {
     self.addressArray = [[NSMutableSet alloc] init];
-
+    baseAdress = [baseAdress stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSData *data = [baseAdress dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    baseAdress = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+//  baseAdress = [baseAdress stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    NSLog(@"%@", baseAdress);
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:@"https://maps.googleapis.com/maps/api/place/autocomplete/json"
        parameters:@{@"types": @"geocode",

@@ -13,7 +13,7 @@ class SplashScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var addr = autoComplete();
-        addr.getAddress("Liberte");
+        addr.getAddress("61 cour de la liberté");
 //        var addr = getNearStations();
 //        var lat = 45.757150
 //        var lon = 4.842739

@@ -13,6 +13,11 @@
 
 -(void)getAddress:(NSString *)baseAdress
 {
+    //baseAdress = [baseAdress stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    baseAdress = [baseAdress stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSData *data = [baseAdress dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    baseAdress = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    NSLog(@"%@", baseAdress);
     self.addressArray = [[NSMutableSet alloc] init];
     if (self.baseRequest == nil)
     {
