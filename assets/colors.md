@@ -13,3 +13,8 @@
 ### Separator
 
 ![Grey](http://placehold.it/500x250/cccccc/ffffff&text=cccccc)
+
+### Navigation Header
+
+![Grey](http://placehold.it/500x250/1c1c1c/ffffff&text=1c1c1c)
+
