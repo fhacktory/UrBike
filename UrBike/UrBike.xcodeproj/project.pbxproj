@@ -11,8 +11,8 @@
 		A5BDA76E19E954B100481977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76D19E954B100481977 /* ViewController.swift */; };
 		A5BDA77119E954B100481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA76F19E954B100481977 /* Main.storyboard */; };
 		A5BDA77319E954B100481977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA77219E954B100481977 /* Images.xcassets */; };
-		A5BDA77619E954B100481977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA77419E954B100481977 /* LaunchScreen.xib */; };
 		A5BDA78219E954B200481977 /* UrBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA78119E954B200481977 /* UrBikeTests.swift */; };
+		A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BDA79019E9568D00481977 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		A5BDA76D19E954B100481977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5BDA77019E954B100481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5BDA77219E954B100481977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A5BDA77519E954B100481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A5BDA77B19E954B200481977 /* UrBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA78019E954B200481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BDA78119E954B200481977 /* UrBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrBikeTests.swift; sourceTree = "<group>"; };
+		A5BDA79019E9568D00481977 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +60,7 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
+				A5BDA79019E9568D00481977 /* CoreVideo.framework */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
 				A5BDA76719E954B100481977 /* Products */,
@@ -77,11 +79,15 @@
 		A5BDA76819E954B100481977 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				A5BDA78F19E954EA00481977 /* Assets */,
+				A5BDA78E19E954E200481977 /* Controller */,
+				A5BDA78D19E954D900481977 /* Model */,
+				A5BDA78C19E954D600481977 /* Github */,
+				A5BDA78B19E954D200481977 /* App */,
 				A5BDA76B19E954B100481977 /* AppDelegate.swift */,
 				A5BDA76D19E954B100481977 /* ViewController.swift */,
 				A5BDA76F19E954B100481977 /* Main.storyboard */,
 				A5BDA77219E954B100481977 /* Images.xcassets */,
-				A5BDA77419E954B100481977 /* LaunchScreen.xib */,
 				A5BDA76919E954B100481977 /* Supporting Files */,
 			);
 			path = UrBike;
@@ -110,6 +116,41 @@
 				A5BDA78019E954B200481977 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BDA78B19E954D200481977 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		A5BDA78C19E954D600481977 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		A5BDA78D19E954D900481977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A5BDA78E19E954E200481977 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A5BDA78F19E954EA00481977 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
-				A5BDA77619E954B100481977 /* LaunchScreen.xib in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +284,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A5BDA77419E954B100481977 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5BDA77519E954B100481977 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -289,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -337,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +439,7 @@
 				A5BDA78719E954B200481977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5BDA78819E954B200481977 /* Build configuration list for PBXNativeTarget "UrBikeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +448,7 @@
 				A5BDA78A19E954B200481977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
