@@ -52,7 +52,7 @@
 		A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityToolBox.swift; path = Tools/Reachability/ReachabilityToolBox.swift; sourceTree = "<group>"; };
 		A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Controller/SplashScreen/SplashScreenViewController.swift; sourceTree = "<group>"; };
 		A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = Github/SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
-		A5FB073A19E96A90008FEF01 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		A5FB073A19E96A90008FEF01 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = Github/SCLAlertView/LICENCE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
