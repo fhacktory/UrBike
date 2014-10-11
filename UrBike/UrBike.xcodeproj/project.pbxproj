@@ -12,6 +12,8 @@
 		A520AF9619E986F80073D96B /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9419E986F80073D96B /* check.png */; };
 		A520AF9719E986F80073D96B /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9519E986F80073D96B /* check@2x.png */; };
 		A520AF9919E9876B0073D96B /* background_map.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9819E9876B0073D96B /* background_map.png */; };
+		A520AFA319E9893F0073D96B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFA219E9893F0073D96B /* logo.png */; };
+		A520AFA519E98EC60073D96B /* ChoosePlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */; };
 		A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E5E1619E975A4004237D3 /* MapKit.framework */; };
 		A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */; };
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
@@ -51,6 +53,8 @@
 		A520AF9419E986F80073D96B /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = Assets/check.png; sourceTree = "<group>"; };
 		A520AF9519E986F80073D96B /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "Assets/check@2x.png"; sourceTree = "<group>"; };
 		A520AF9819E9876B0073D96B /* background_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_map.png; sourceTree = "<group>"; };
+		A520AFA219E9893F0073D96B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoosePlaceViewController.swift; path = Controller/ChoosePlace/ChoosePlaceViewController.swift; sourceTree = "<group>"; };
 		A55E5E1619E975A4004237D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationToolBox.swift; path = Tools/Location/LocationToolBox.swift; sourceTree = "<group>"; };
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,14 @@
 				A520AF9119E9819A0073D96B /* addressResolver.m */,
 			);
 			name = AddressResolver;
+			sourceTree = "<group>";
+		};
+		A520AFA919E990EE0073D96B /* ChoosePlace */ = {
+			isa = PBXGroup;
+			children = (
+				A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */,
+			);
+			name = ChoosePlace;
 			sourceTree = "<group>";
 		};
 		A55E5E1819E975A9004237D3 /* Framework */ = {
@@ -224,6 +236,7 @@
 		A5BDA78E19E954E200481977 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A520AFA919E990EE0073D96B /* ChoosePlace */,
 				A5FB072B19E95A76008FEF01 /* SplashScreen */,
 			);
 			name = Controller;
@@ -235,6 +248,7 @@
 				A520AF9819E9876B0073D96B /* background_map.png */,
 				A520AF9419E986F80073D96B /* check.png */,
 				A520AF9519E986F80073D96B /* check@2x.png */,
+				A520AFA219E9893F0073D96B /* logo.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -384,6 +398,7 @@
 			files = (
 				A520AF9619E986F80073D96B /* check.png in Resources */,
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
+				A520AFA319E9893F0073D96B /* logo.png in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
 				A520AF9719E986F80073D96B /* check@2x.png in Resources */,
 				A520AF9919E9876B0073D96B /* background_map.png in Resources */,
@@ -411,6 +426,7 @@
 				F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
 				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
+				A520AFA519E98EC60073D96B /* ChoosePlaceViewController.swift in Sources */,
 				F0D1443819E982D500DE1213 /* AFHTTPSessionManager.m in Sources */,
 				A520AF9219E9819A0073D96B /* addressObject.m in Sources */,
 				A520AF9319E9819A0073D96B /* addressResolver.m in Sources */,
