@@ -14,6 +14,9 @@
 		A520AF9919E9876B0073D96B /* background_map.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9819E9876B0073D96B /* background_map.png */; };
 		A520AFA319E9893F0073D96B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFA219E9893F0073D96B /* logo.png */; };
 		A520AFA519E98EC60073D96B /* ChoosePlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */; };
+		A520AFAC19E993D40073D96B /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFAA19E993D40073D96B /* checked.png */; };
+		A520AFAD19E993D40073D96B /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFAB19E993D40073D96B /* unchecked.png */; };
+		A520AFB019E9981F0073D96B /* ChooseTransportModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */; };
 		A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E5E1619E975A4004237D3 /* MapKit.framework */; };
 		A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */; };
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
@@ -55,6 +58,9 @@
 		A520AF9819E9876B0073D96B /* background_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_map.png; sourceTree = "<group>"; };
 		A520AFA219E9893F0073D96B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoosePlaceViewController.swift; path = Controller/ChoosePlace/ChoosePlaceViewController.swift; sourceTree = "<group>"; };
+		A520AFAA19E993D40073D96B /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		A520AFAB19E993D40073D96B /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseTransportModeViewController.swift; path = Controller/ChooseTransportMode/ChooseTransportModeViewController.swift; sourceTree = "<group>"; };
 		A55E5E1619E975A4004237D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationToolBox.swift; path = Tools/Location/LocationToolBox.swift; sourceTree = "<group>"; };
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,14 @@
 				A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */,
 			);
 			name = ChoosePlace;
+			sourceTree = "<group>";
+		};
+		A520AFAE19E997D40073D96B /* ChooseTransportMode */ = {
+			isa = PBXGroup;
+			children = (
+				A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */,
+			);
+			name = ChooseTransportMode;
 			sourceTree = "<group>";
 		};
 		A55E5E1819E975A9004237D3 /* Framework */ = {
@@ -236,6 +250,7 @@
 		A5BDA78E19E954E200481977 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A520AFAE19E997D40073D96B /* ChooseTransportMode */,
 				A520AFA919E990EE0073D96B /* ChoosePlace */,
 				A5FB072B19E95A76008FEF01 /* SplashScreen */,
 			);
@@ -247,6 +262,8 @@
 			children = (
 				A520AF9819E9876B0073D96B /* background_map.png */,
 				A520AF9419E986F80073D96B /* check.png */,
+				A520AFAA19E993D40073D96B /* checked.png */,
+				A520AFAB19E993D40073D96B /* unchecked.png */,
 				A520AF9519E986F80073D96B /* check@2x.png */,
 				A520AFA219E9893F0073D96B /* logo.png */,
 			);
@@ -398,8 +415,10 @@
 			files = (
 				A520AF9619E986F80073D96B /* check.png in Resources */,
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
+				A520AFAD19E993D40073D96B /* unchecked.png in Resources */,
 				A520AFA319E9893F0073D96B /* logo.png in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
+				A520AFAC19E993D40073D96B /* checked.png in Resources */,
 				A520AF9719E986F80073D96B /* check@2x.png in Resources */,
 				A520AF9919E9876B0073D96B /* background_map.png in Resources */,
 			);
@@ -421,6 +440,7 @@
 			files = (
 				F0D1443E19E982D500DE1213 /* AFURLSessionManager.m in Sources */,
 				F0D1443B19E982D500DE1213 /* AFURLConnectionOperation.m in Sources */,
+				A520AFB019E9981F0073D96B /* ChooseTransportModeViewController.swift in Sources */,
 				F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */,
