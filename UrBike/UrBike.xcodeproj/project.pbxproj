@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
-		A5BDA76E19E954B100481977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76D19E954B100481977 /* ViewController.swift */; };
 		A5BDA77119E954B100481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA76F19E954B100481977 /* Main.storyboard */; };
 		A5BDA77319E954B100481977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA77219E954B100481977 /* Images.xcassets */; };
 		A5BDA78219E954B200481977 /* UrBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA78119E954B200481977 /* UrBikeTests.swift */; };
-		A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BDA79019E9568D00481977 /* CoreVideo.framework */; };
+		A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073019E95C4C008FEF01 /* Reachability.m */; };
+		A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */; };
+		A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,17 @@
 /* Begin PBXFileReference section */
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA76A19E954B100481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5BDA76B19E954B100481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5BDA76D19E954B100481977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5BDA76B19E954B100481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
 		A5BDA77019E954B100481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5BDA77219E954B100481977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A5BDA77B19E954B200481977 /* UrBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA78019E954B200481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BDA78119E954B200481977 /* UrBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrBikeTests.swift; sourceTree = "<group>"; };
-		A5BDA79019E9568D00481977 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrBike-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5FB072F19E95C4C008FEF01 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Tools/Reachability/Reachability.h; sourceTree = "<group>"; };
+		A5FB073019E95C4C008FEF01 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Tools/Reachability/Reachability.m; sourceTree = "<group>"; };
+		A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityToolBox.swift; path = Tools/Reachability/ReachabilityToolBox.swift; sourceTree = "<group>"; };
+		A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Controller/SplashScreen/SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +63,6 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
-				A5BDA79019E9568D00481977 /* CoreVideo.framework */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
 				A5BDA76719E954B100481977 /* Products */,
@@ -79,13 +81,13 @@
 		A5BDA76819E954B100481977 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */,
+				A5FB072C19E95B22008FEF01 /* Tools */,
 				A5BDA78F19E954EA00481977 /* Assets */,
 				A5BDA78E19E954E200481977 /* Controller */,
 				A5BDA78D19E954D900481977 /* Model */,
 				A5BDA78C19E954D600481977 /* Github */,
 				A5BDA78B19E954D200481977 /* App */,
-				A5BDA76B19E954B100481977 /* AppDelegate.swift */,
-				A5BDA76D19E954B100481977 /* ViewController.swift */,
 				A5BDA76F19E954B100481977 /* Main.storyboard */,
 				A5BDA77219E954B100481977 /* Images.xcassets */,
 				A5BDA76919E954B100481977 /* Supporting Files */,
@@ -121,6 +123,7 @@
 		A5BDA78B19E954D200481977 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A5BDA76B19E954B100481977 /* AppDelegate.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 		A5BDA78E19E954E200481977 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5FB072B19E95A76008FEF01 /* SplashScreen */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -151,6 +155,32 @@
 			children = (
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		A5FB072B19E95A76008FEF01 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */,
+			);
+			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		A5FB072C19E95B22008FEF01 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB072D19E95C3F008FEF01 /* Reachability */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A5FB072D19E95C3F008FEF01 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB072F19E95C4C008FEF01 /* Reachability.h */,
+				A5FB073019E95C4C008FEF01 /* Reachability.m */,
+				A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5BDA76E19E954B100481977 /* ViewController.swift in Sources */,
+				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
+				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
+				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
 				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,10 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrBike/UrBike-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -379,10 +414,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UrBike/UrBike-Bridging-Header.h";
 			};
 			name = Release;
 		};
