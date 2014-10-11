@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class ReachabilityToolBox {
+    
+    class func hasConnectivity() -> Bool {
+        let reachability: Reachability = Reachability.reachabilityForInternetConnection()
+        let networkStatus: Int = reachability.currentReachabilityStatus().value
+        return networkStatus != 0
+    }
+
+}

@@ -13,23 +13,31 @@ class SplashScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func checkEnabledToUseApplication() {
+        
+        if ReachabilityToolBox.hasConnectivity() {
+            
+            
+            
+        } else {
+            
+            let alert = SCLAlertView()
+            
+            alert.addButton("Quitter l'application") {
+                println("clicked")
+                exit(0)
+            }
+            
+            alert.showError(self, title: "Ouuups", subTitle: "Vous n'avez pas de connexion internet.")
+            
+        }
     }
-    */
+    
 
 }
