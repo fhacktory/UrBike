@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 UrBike. All rights reserved.
 //
 
-#import "adressResolver.h"
-#import "adressObject.h"
+#import "addressResolver.h"
+#import "addressObject.h"
 
 @implementation adressResolver
 
--(void)getAdress:(NSString *)baseAdress
+-(void)getAddress:(NSString *)baseAdress
 {
-    
+    NSLog(@"test");
     if (self.baseRequest == nil)
     {
         self.baseRequest = [[NSMutableString alloc] init];

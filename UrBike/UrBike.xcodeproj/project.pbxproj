@@ -23,8 +23,8 @@
 		F0454F3F19E96212004DE0F3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F3419E96212004DE0F3 /* AFURLRequestSerialization.m */; };
 		F0454F4019E96212004DE0F3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F3619E96212004DE0F3 /* AFURLResponseSerialization.m */; };
 		F0454F4119E96212004DE0F3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F3819E96212004DE0F3 /* AFURLSessionManager.m */; };
-		F0454F4719E96270004DE0F3 /* adressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F4619E96270004DE0F3 /* adressResolver.m */; };
-		F0454F4A19E964C0004DE0F3 /* adressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F4919E964C0004DE0F3 /* adressObject.m */; };
+		F0454F4719E96270004DE0F3 /* addressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F4619E96270004DE0F3 /* addressResolver.m */; };
+		F0454F4A19E964C0004DE0F3 /* addressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454F4919E964C0004DE0F3 /* addressObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +70,10 @@
 		F0454F3619E96212004DE0F3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		F0454F3719E96212004DE0F3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		F0454F3819E96212004DE0F3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		F0454F4519E96270004DE0F3 /* adressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = adressResolver.h; path = ../adressResolver.h; sourceTree = "<group>"; };
-		F0454F4619E96270004DE0F3 /* adressResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = adressResolver.m; path = ../adressResolver.m; sourceTree = "<group>"; };
-		F0454F4819E964C0004DE0F3 /* adressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adressObject.h; sourceTree = "<group>"; };
-		F0454F4919E964C0004DE0F3 /* adressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = adressObject.m; sourceTree = "<group>"; };
+		F0454F4519E96270004DE0F3 /* addressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressResolver.h; path = ../addressResolver.h; sourceTree = "<group>"; };
+		F0454F4619E96270004DE0F3 /* addressResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressResolver.m; path = ../addressResolver.m; sourceTree = "<group>"; };
+		F0454F4819E964C0004DE0F3 /* addressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addressObject.h; sourceTree = "<group>"; };
+		F0454F4919E964C0004DE0F3 /* addressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,10 +248,10 @@
 		F0454F4B19E964CA004DE0F3 /* AdressResolverAPI */ = {
 			isa = PBXGroup;
 			children = (
-				F0454F4519E96270004DE0F3 /* adressResolver.h */,
-				F0454F4619E96270004DE0F3 /* adressResolver.m */,
-				F0454F4819E964C0004DE0F3 /* adressObject.h */,
-				F0454F4919E964C0004DE0F3 /* adressObject.m */,
+				F0454F4519E96270004DE0F3 /* addressResolver.h */,
+				F0454F4819E964C0004DE0F3 /* addressObject.h */,
+				F0454F4619E96270004DE0F3 /* addressResolver.m */,
+				F0454F4919E964C0004DE0F3 /* addressObject.m */,
 			);
 			name = AdressResolverAPI;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0454F4A19E964C0004DE0F3 /* adressObject.m in Sources */,
+				F0454F4A19E964C0004DE0F3 /* addressObject.m in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				F0454F3D19E96212004DE0F3 /* AFSecurityPolicy.m in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
@@ -363,7 +363,7 @@
 				F0454F3E19E96212004DE0F3 /* AFURLConnectionOperation.m in Sources */,
 				F0454F3919E96212004DE0F3 /* AFHTTPRequestOperation.m in Sources */,
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
-				F0454F4719E96270004DE0F3 /* adressResolver.m in Sources */,
+				F0454F4719E96270004DE0F3 /* addressResolver.m in Sources */,
 				F0454F3F19E96212004DE0F3 /* AFURLRequestSerialization.m in Sources */,
 				F0454F3B19E96212004DE0F3 /* AFHTTPSessionManager.m in Sources */,
 				F0454F3C19E96212004DE0F3 /* AFNetworkReachabilityManager.m in Sources */,

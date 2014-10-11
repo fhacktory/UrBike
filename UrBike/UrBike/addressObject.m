@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 UrBike. All rights reserved.
 //
 
-#import "adressObject.h"
+#import "addressObject.h"
 
 @implementation adressObject
 

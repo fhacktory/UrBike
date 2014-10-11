@@ -15,7 +15,7 @@
 @property (strong, nonatomic) NSMutableDictionary *results;
 @property (strong, nonatomic) NSMutableArray *adressArray;
 
--(void)getAdress:(NSString*)baseAdress;
+-(void)getAddress:(NSString*)baseAdress;
 - (void)addObjectToArray:(NSNumber *)latitude curLongitude:(NSNumber *)longitude address:(NSString *)address city:(NSString *)city;
 
 @end
