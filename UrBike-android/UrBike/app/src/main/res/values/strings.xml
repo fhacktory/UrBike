@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UrBike</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_address">Recherche</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro">"Où voulez-vous aller"</string>
+    <string name="destination">Destination</string>
+    <string name="transport_mode">Mode de transport</string>
+    <string name="radio_1">"J'ai mon vélo"</string>
+    <string name="radio_1_content">Indiquer moi juste comment arriver à ma destination.</string>
+    <string name="radio_2">"J'ai besoin mon vélo"</string>
+    <string name="radio_2_content">Trouvez moi le vélo en libre service le plus proche</string>
+    <string name="radio_3">"Je dois déposer mon vélo"</string>
+    <string name="radio_3_content">Trouvez moi la station libre la plus proche</string>
+</resources>
