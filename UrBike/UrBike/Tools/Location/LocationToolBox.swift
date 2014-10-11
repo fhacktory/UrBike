@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 UrBike. All rights reserved.
 //
 
+
+
 import Foundation
 import MapKit
 
@@ -15,22 +17,33 @@ class LocationToolBox {
     
     class func setupUserLocation() {
         
+
+        
         userLocation = CLLocationManager()
         userLocation!.delegate = UIApplication.sharedApplication().delegate! as AppDelegate
         userLocation!.desiredAccuracy = kCLLocationAccuracyBest
         userLocation!.distanceFilter = kCLDistanceFilterNone
+        
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue >= 8.0 {
+            self.getUserLocation()!.requestAlwaysAuthorization()
+        }
+        
         userLocation!.startUpdatingLocation()
 
     }
     
     
-    class func getLocation() {
+    class func printStateLocation() {
         
         if self.locationWorking() {
             println("Location ok")
         } else {
             println("Location non ok")
         }
+    }
+    
+    class func getUserLocation() -> CLLocationManager? {
+        return userLocation
     }
     
     class func locationWorking() -> Bool {

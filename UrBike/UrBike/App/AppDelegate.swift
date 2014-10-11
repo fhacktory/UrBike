@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     func getLocation() {
-        LocationToolBox.getLocation()
+        LocationToolBox.printStateLocation()
     }
     
     func applicationWillResignActive(application: UIApplication) {
