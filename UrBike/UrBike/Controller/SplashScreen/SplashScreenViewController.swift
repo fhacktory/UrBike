@@ -27,10 +27,6 @@ class SplashScreenViewController: UIViewController {
     func checkEnabledToUseApplication() {
         
         if ReachabilityToolBox.hasConnectivity() {
-            
-            self.performSegueWithIdentifier("goToMainView", sender: self)
-            
-            
         } else {
             
             let alert = SCLAlertView()
@@ -39,7 +35,6 @@ class SplashScreenViewController: UIViewController {
                 println("clicked")
                 exit(0)
             }
-            
             alert.showError(self, title: "Ouuups", subTitle: "Vous n'avez pas de connexion internet.")
             
         }

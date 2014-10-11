@@ -9,11 +9,16 @@
 #import "addressResolver.h"
 #import "addressObject.h"
 
-@implementation adressResolver
+@implementation addressResolver
 
 -(void)getAddress:(NSString *)baseAdress
 {
-    NSLog(@"test");
+    //baseAdress = [baseAdress stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    baseAdress = [baseAdress stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSData *data = [baseAdress dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    baseAdress = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    NSLog(@"%@", baseAdress);
+    self.addressArray = [[NSMutableSet alloc] init];
     if (self.baseRequest == nil)
     {
         self.baseRequest = [[NSMutableString alloc] init];
@@ -29,28 +34,30 @@
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject)
      {
          NSError* error;
-         NSLog(@"JSON :%@", responseObject);
+         NSLog(@"REQUEST OK");
          self.results = [NSJSONSerialization
                              JSONObjectWithData:responseObject
                              options:kNilOptions
                              error:&error];
+         [self parseData];
      }
     failure:^(AFHTTPRequestOperation *operation, NSError *error)
      {
          NSLog(@"Error: %@", [error localizedDescription]);
-         _adressArray = nil;
+         _addressArray = nil;
      }];
     [operation start];
 }
 
 - (void)addObjectToArray:(NSNumber *)latitude curLongitude:(NSNumber *)longitude address:(NSString *)address city:(NSString *)city
 {
-    adressObject *addObject = [[adressObject alloc] init];
+//    NSLog(@"%@, %@, %@, %@", address, longitude, latitude, city);
+    addressObject *addObject = [[addressObject alloc] init];
     [addObject setLat:latitude];
     [addObject setLon:longitude];
     [addObject setCity:city];
     [addObject setAddress:address];
-    [_adressArray addObject:addObject];
+    [_addressArray addObject:addObject];
 }
 
 -(void)parseData
@@ -60,16 +67,27 @@
     NSNumber *lon = [[NSNumber alloc] init];
     NSMutableString *city = [[NSMutableString alloc] init];
     
+    _results = _results[@"results"];
     for (id key in _results)
     {
         [city setString:@""];
         [concatAddress setString:@""];
-        [concatAddress appendString:key[@"results"][@"formatted_address"]];
-        lat = key[@"results"][@"geometry"][@"lat"];
-        lon = key[@"results"][@"geometry"][@"lng"];
+        [concatAddress appendString:key[@"formatted_address"]];
+        lat = key[@"geometry"][@"location"][@"lat"];
+        lon = key[@"geometry"][@"location"][@"lng"];
         [city appendString:@"lyon"];
         [self addObjectToArray:lat curLongitude:lon address:concatAddress city:city];
     }
+    [self testAddress];
+}
+
+-(void)testAddress
+{
+    NSLog(@"Resultats: %ld", [_addressArray count]);
+//    for (addressObject *key in _addressArray)
+//    {
+//        NSLog(@"%@, %@, %@, %@", key.address, key.lon, key.lat, key.city);
+//    }
 }
 
 @end

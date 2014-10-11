@@ -1,5 +1,5 @@
 //
-//  adressResolver.h
+//  autoComplete.h
 //  UrBike
 //
 //  Created by Apollo on 11/10/14.
@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFHTTPRequestOperation.h"
 
-@interface addressResolver : NSObject
+@interface autoComplete : NSObject
 
 @property (strong, nonatomic) NSMutableString *baseRequest;
 @property (strong, nonatomic) NSMutableDictionary *results;
@@ -17,6 +16,7 @@
 
 -(void)parseData;
 -(void)getAddress:(NSString*)baseAdress;
-- (void)addObjectToArray:(NSNumber *)latitude curLongitude:(NSNumber *)longitude address:(NSString *)address city:(NSString *)city;
+-(void)addObjectToArray:(NSString*)TextString;
 -(void)testAddress;
+
 @end
