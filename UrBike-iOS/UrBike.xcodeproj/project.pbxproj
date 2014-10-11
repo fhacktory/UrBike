@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5BDA72E19E9517B00481977 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B13DB19E95057005EAF0E /* UIKit.framework */; };
 		F0454D8719E9378D004DE0F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454D8619E9378D004DE0F3 /* main.m */; };
 		F0454D8A19E9378D004DE0F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454D8919E9378D004DE0F3 /* AppDelegate.m */; };
 		F0454D8D19E9378D004DE0F3 /* UrBike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0454D8B19E9378D004DE0F3 /* UrBike.xcdatamodeld */; };
-		F0454D9019E9378D004DE0F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454D8F19E9378D004DE0F3 /* ViewController.m */; };
 		F0454D9319E9378D004DE0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0454D9119E9378D004DE0F3 /* Main.storyboard */; };
 		F0454D9519E9378D004DE0F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0454D9419E9378D004DE0F3 /* Images.xcassets */; };
-		F0454DA419E9378D004DE0F3 /* UrBikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0454DA319E9378D004DE0F3 /* UrBikeTests.m */; };
 		F0454EC919E93B7B004DE0F3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454EC819E93B7B004DE0F3 /* AVFoundation.framework */; };
 		F0454ECB19E93B84004DE0F3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ECA19E93B84004DE0F3 /* CoreData.framework */; };
 		F0454ECD19E93B8A004DE0F3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0454ECC19E93B8A004DE0F3 /* CoreLocation.framework */; };
@@ -31,19 +30,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50B13DB19E95057005EAF0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0454D8119E9378D004DE0F3 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0454D8519E9378D004DE0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0454D8619E9378D004DE0F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0454D8819E9378D004DE0F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0454D8919E9378D004DE0F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F0454D8C19E9378D004DE0F3 /* UrBike.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UrBike.xcdatamodel; sourceTree = "<group>"; };
-		F0454D8E19E9378D004DE0F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0454D8F19E9378D004DE0F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F0454D9219E9378D004DE0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0454D9419E9378D004DE0F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F0454D9D19E9378D004DE0F3 /* UrBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0454DA219E9378D004DE0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0454DA319E9378D004DE0F3 /* UrBikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrBikeTests.m; sourceTree = "<group>"; };
 		F0454EC819E93B7B004DE0F3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F0454ECA19E93B84004DE0F3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F0454ECC19E93B8A004DE0F3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -55,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BDA72E19E9517B00481977 /* UIKit.framework in Frameworks */,
 				F0454EDD19E93BD4004DE0F3 /* QuartzCore.framework in Frameworks */,
 				F0454ECD19E93B8A004DE0F3 /* CoreLocation.framework in Frameworks */,
 				F0454ECB19E93B84004DE0F3 /* CoreData.framework in Frameworks */,
@@ -72,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50B13DA19E94DEB005EAF0E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F0454D8B19E9378D004DE0F3 /* UrBike.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		A5AD69FF19E944CA00E32054 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +101,6 @@
 		A5AD6A0219E946C300E32054 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F0454D8E19E9378D004DE0F3 /* ViewController.h */,
-				F0454D8F19E9378D004DE0F3 /* ViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -116,7 +119,6 @@
 			children = (
 				F0454EC319E93AF7004DE0F3 /* Frameworks */,
 				F0454D8319E9378D004DE0F3 /* UrBike */,
-				F0454DA019E9378D004DE0F3 /* UrBikeTests */,
 				F0454D8219E9378D004DE0F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +135,7 @@
 		F0454D8319E9378D004DE0F3 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				A50B13DA19E94DEB005EAF0E /* CoreData */,
 				A5AD6A0319E9470400E32054 /* App */,
 				A5AD6A0219E946C300E32054 /* Controller */,
 				A5AD6A0119E944FD00E32054 /* Assets */,
@@ -140,7 +143,6 @@
 				A5AD69FF19E944CA00E32054 /* Model */,
 				F0454D9119E9378D004DE0F3 /* Main.storyboard */,
 				F0454D9419E9378D004DE0F3 /* Images.xcassets */,
-				F0454D8B19E9378D004DE0F3 /* UrBike.xcdatamodeld */,
 				F0454D8419E9378D004DE0F3 /* Supporting Files */,
 			);
 			path = UrBike;
@@ -155,26 +157,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F0454DA019E9378D004DE0F3 /* UrBikeTests */ = {
-			isa = PBXGroup;
-			children = (
-				F0454DA319E9378D004DE0F3 /* UrBikeTests.m */,
-				F0454DA119E9378D004DE0F3 /* Supporting Files */,
-			);
-			path = UrBikeTests;
-			sourceTree = "<group>";
-		};
-		F0454DA119E9378D004DE0F3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F0454DA219E9378D004DE0F3 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F0454EC319E93AF7004DE0F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A50B13DB19E95057005EAF0E /* UIKit.framework */,
 				F0454EDC19E93BD4004DE0F3 /* QuartzCore.framework */,
 				F0454ECC19E93B8A004DE0F3 /* CoreLocation.framework */,
 				F0454ECA19E93B84004DE0F3 /* CoreData.framework */,
@@ -317,7 +303,6 @@
 			files = (
 				F0454D8D19E9378D004DE0F3 /* UrBike.xcdatamodeld in Sources */,
 				F0454D8A19E9378D004DE0F3 /* AppDelegate.m in Sources */,
-				F0454D9019E9378D004DE0F3 /* ViewController.m in Sources */,
 				F0454D8719E9378D004DE0F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0454DA419E9378D004DE0F3 /* UrBikeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -432,12 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GoogleMapsM4B-iOS-1.8.1",
-					"$(PROJECT_DIR)/GoogleMapsM4B-iOS-1.8.1/GoogleMapsSDKDemos",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,12 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GoogleMapsM4B-iOS-1.8.1",
-					"$(PROJECT_DIR)/GoogleMapsM4B-iOS-1.8.1/GoogleMapsSDKDemos",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
