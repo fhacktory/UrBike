@@ -1,0 +1,72 @@
+{
+	"id": "9aae2170-e691-9d43-6bac-ac05aeea5ca0",
+	"name": "UrBike",
+	"description": "",
+	"order": [
+		"84a4d34d-9028-f212-df03-98a1ba2fbf5d",
+		"96dbf1a4-3533-90b3-87a8-2700ecd34bd2"
+	],
+	"folders": [],
+	"timestamp": 1413028416252,
+	"synced": false,
+	"requests": [
+		{
+			"id": "84a4d34d-9028-f212-df03-98a1ba2fbf5d",
+			"headers": "",
+			"url": "http://{{url}}/getNearFree",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "lat",
+					"value": "45.757644",
+					"type": "text"
+				},
+				{
+					"key": "lng",
+					"value": "4.842610",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1413031312892,
+			"name": "Get near free stations",
+			"description": "",
+			"collectionId": "9aae2170-e691-9d43-6bac-ac05aeea5ca0",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "96dbf1a4-3533-90b3-87a8-2700ecd34bd2",
+			"headers": "",
+			"url": "http://{{url}}/getNearBike",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "lat",
+					"value": "45.757150",
+					"type": "text"
+				},
+				{
+					"key": "lng",
+					"value": "4.842739",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1413031250085,
+			"name": "Get near bikes",
+			"description": "",
+			"collectionId": "9aae2170-e691-9d43-6bac-ac05aeea5ca0",
+			"responses": [],
+			"synced": false
+		}
+	]
+}
