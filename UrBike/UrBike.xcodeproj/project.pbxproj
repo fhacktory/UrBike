@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
+		A5BDA76E19E954B100481977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76D19E954B100481977 /* ViewController.swift */; };
+		A5BDA77119E954B100481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA76F19E954B100481977 /* Main.storyboard */; };
+		A5BDA77319E954B100481977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA77219E954B100481977 /* Images.xcassets */; };
+		A5BDA78219E954B200481977 /* UrBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA78119E954B200481977 /* UrBikeTests.swift */; };
+		A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BDA79019E9568D00481977 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5BDA77C19E954B200481977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5BDA75E19E954B100481977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BDA76519E954B100481977;
+			remoteInfo = UrBike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BDA76A19E954B100481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BDA76B19E954B100481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5BDA76D19E954B100481977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5BDA77019E954B100481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5BDA77219E954B100481977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5BDA77B19E954B200481977 /* UrBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BDA78019E954B200481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BDA78119E954B200481977 /* UrBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrBikeTests.swift; sourceTree = "<group>"; };
+		A5BDA79019E9568D00481977 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5BDA76319E954B100481977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BDA79119E9568D00481977 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BDA77819E954B200481977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5BDA75D19E954B100481977 = {
+			isa = PBXGroup;
+			children = (
+				A5BDA79019E9568D00481977 /* CoreVideo.framework */,
+				A5BDA76819E954B100481977 /* UrBike */,
+				A5BDA77E19E954B200481977 /* UrBikeTests */,
+				A5BDA76719E954B100481977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5BDA76719E954B100481977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDA76619E954B100481977 /* UrBike.app */,
+				A5BDA77B19E954B200481977 /* UrBikeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5BDA76819E954B100481977 /* UrBike */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDA78F19E954EA00481977 /* Assets */,
+				A5BDA78E19E954E200481977 /* Controller */,
+				A5BDA78D19E954D900481977 /* Model */,
+				A5BDA78C19E954D600481977 /* Github */,
+				A5BDA78B19E954D200481977 /* App */,
+				A5BDA76B19E954B100481977 /* AppDelegate.swift */,
+				A5BDA76D19E954B100481977 /* ViewController.swift */,
+				A5BDA76F19E954B100481977 /* Main.storyboard */,
+				A5BDA77219E954B100481977 /* Images.xcassets */,
+				A5BDA76919E954B100481977 /* Supporting Files */,
+			);
+			path = UrBike;
+			sourceTree = "<group>";
+		};
+		A5BDA76919E954B100481977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDA76A19E954B100481977 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BDA77E19E954B200481977 /* UrBikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDA78119E954B200481977 /* UrBikeTests.swift */,
+				A5BDA77F19E954B200481977 /* Supporting Files */,
+			);
+			path = UrBikeTests;
+			sourceTree = "<group>";
+		};
+		A5BDA77F19E954B200481977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDA78019E954B200481977 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5BDA78B19E954D200481977 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		A5BDA78C19E954D600481977 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Github;
+			sourceTree = "<group>";
+		};
+		A5BDA78D19E954D900481977 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A5BDA78E19E954E200481977 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A5BDA78F19E954EA00481977 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5BDA76519E954B100481977 /* UrBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BDA78519E954B200481977 /* Build configuration list for PBXNativeTarget "UrBike" */;
+			buildPhases = (
+				A5BDA76219E954B100481977 /* Sources */,
+				A5BDA76319E954B100481977 /* Frameworks */,
+				A5BDA76419E954B100481977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UrBike;
+			productName = UrBike;
+			productReference = A5BDA76619E954B100481977 /* UrBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5BDA77A19E954B200481977 /* UrBikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BDA78819E954B200481977 /* Build configuration list for PBXNativeTarget "UrBikeTests" */;
+			buildPhases = (
+				A5BDA77719E954B200481977 /* Sources */,
+				A5BDA77819E954B200481977 /* Frameworks */,
+				A5BDA77919E954B200481977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BDA77D19E954B200481977 /* PBXTargetDependency */,
+			);
+			name = UrBikeTests;
+			productName = UrBikeTests;
+			productReference = A5BDA77B19E954B200481977 /* UrBikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5BDA75E19E954B100481977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = UrBike;
+				TargetAttributes = {
+					A5BDA76519E954B100481977 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A5BDA77A19E954B200481977 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A5BDA76519E954B100481977;
+					};
+				};
+			};
+			buildConfigurationList = A5BDA76119E954B100481977 /* Build configuration list for PBXProject "UrBike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5BDA75D19E954B100481977;
+			productRefGroup = A5BDA76719E954B100481977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5BDA76519E954B100481977 /* UrBike */,
+				A5BDA77A19E954B200481977 /* UrBikeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5BDA76419E954B100481977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
+				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BDA77919E954B200481977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5BDA76219E954B100481977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BDA76E19E954B100481977 /* ViewController.swift in Sources */,
+				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BDA77719E954B200481977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BDA78219E954B200481977 /* UrBikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5BDA77D19E954B200481977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BDA76519E954B100481977 /* UrBike */;
+			targetProxy = A5BDA77C19E954B200481977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5BDA76F19E954B100481977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5BDA77019E954B100481977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5BDA78319E954B200481977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5BDA78419E954B200481977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5BDA78619E954B200481977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5BDA78719E954B200481977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UrBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5BDA78919E954B200481977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UrBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UrBike.app/UrBike";
+			};
+			name = Debug;
+		};
+		A5BDA78A19E954B200481977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UrBikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UrBike.app/UrBike";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5BDA76119E954B100481977 /* Build configuration list for PBXProject "UrBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BDA78319E954B200481977 /* Debug */,
+				A5BDA78419E954B200481977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BDA78519E954B200481977 /* Build configuration list for PBXNativeTarget "UrBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BDA78619E954B200481977 /* Debug */,
+				A5BDA78719E954B200481977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BDA78819E954B200481977 /* Build configuration list for PBXNativeTarget "UrBikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BDA78919E954B200481977 /* Debug */,
+				A5BDA78A19E954B200481977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5BDA75E19E954B100481977 /* Project object */;
+}
