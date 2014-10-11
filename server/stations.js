@@ -66,7 +66,7 @@ function extractInfos(station) {
 function updateCity(cityName) {
     City.findOne({contract_name: cityName}, function(err, city) {
         if (!city)
-            return City.create({contract_name: cityName}, function(err, saved) {
+            return City.create({contract_name: cityName, last_update: new Date(0)}, function(err, saved) {
                 console.log(saved);
                 updateCity(cityName)
             });
