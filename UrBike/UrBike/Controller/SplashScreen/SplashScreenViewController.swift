@@ -27,6 +27,8 @@ class SplashScreenViewController: UIViewController {
     func checkEnabledToUseApplication() {
         
         if ReachabilityToolBox.hasConnectivity() {
+            
+            self.performSegueWithIdentifier("goToChoosePlaceView", sender: self)
         } else {
             
             let alert = SCLAlertView()

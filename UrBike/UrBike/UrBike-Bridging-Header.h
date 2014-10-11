@@ -8,4 +8,8 @@
 
 
 #import "Reachability.h"
-
+#import "addressObject.h"
+#import "addressResolver.h"
+#import "getNearBikes.h"
+#import "getNearStations.h"
+#import "autoComplete.h"

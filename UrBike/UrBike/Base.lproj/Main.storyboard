@@ -29,12 +29,12 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="oJW-jg-T7B" kind="presentation" identifier="goToMainView" id="fl3-4v-ri2"/>
+                        <segue destination="oAb-Rw-7Qj" kind="presentation" identifier="goToChoosePlaceView" id="jST-47-t85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-712.5" y="68"/>
+            <point key="canvasLocation" x="-252" y="68"/>
         </scene>
         <!--Choose Place View Controller-->
         <scene sceneID="Cpx-iR-icx">
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yd0-hu-nfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457.5" y="68"/>
+            <point key="canvasLocation" x="289.5" y="68"/>
         </scene>
         <!--Choose Transport Mode View Controller-->
         <scene sceneID="pXw-T0-Lnd">
@@ -336,25 +336,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HyE-SO-m3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1561.5" y="68"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gUP-yB-IJZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oJW-jg-T7B" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cqH-U2-gWg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="oAb-Rw-7Qj" kind="relationship" relationship="rootViewController" id="S38-Ve-EwP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IYE-fP-mh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-130.5" y="68"/>
         </scene>
     </scenes>
     <resources>
