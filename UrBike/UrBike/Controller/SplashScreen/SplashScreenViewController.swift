@@ -12,14 +12,6 @@ class SplashScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var addr = autoComplete();
-        addr.getAddress("61 cour de la liberté");
-//        var addr = getNearStations();
-//        var lat = 45.757150
-//        var lon = 4.842739
-//        addr.getNearStations(lat, lon: lon);
-////        var addr = addressResolver()
-////        addr.getAddress("61rueliberte")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,9 +21,6 @@ class SplashScreenViewController: UIViewController {
     func checkEnabledToUseApplication() {
         
         if ReachabilityToolBox.hasConnectivity() {
-            
-            
-            
         } else {
             
             let alert = SCLAlertView()
@@ -40,7 +29,6 @@ class SplashScreenViewController: UIViewController {
                 println("clicked")
                 exit(0)
             }
-            
             alert.showError(self, title: "Ouuups", subTitle: "Vous n'avez pas de connexion internet.")
             
         }
