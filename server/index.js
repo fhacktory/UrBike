@@ -12,6 +12,6 @@ app.post("/getNearBike", require("./nearBike"));
 
 
 var server = app.listen(config.port, function() {
-    // require("./stations.js").launch();
+    require("./stations.js").launch();
     console.log('Listening on port %d', server.address().port);
 });
