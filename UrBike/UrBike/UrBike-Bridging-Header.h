@@ -16,3 +16,5 @@
 #import "getNearStations.h"
 #import "autoComplete.h"
 #import "Reachability.h"
+#import "directions.h"
+#import "directionsObject.h"

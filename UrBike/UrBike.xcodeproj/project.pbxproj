@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A51C9CC019EA0B2600933751 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */; };
+		A51C9CC219EA36B100933751 /* MyBikeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51C9CC119EA36B100933751 /* MyBikeAnnotation.swift */; };
 		A520AF9219E9819A0073D96B /* addressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF8F19E9819A0073D96B /* addressObject.m */; };
 		A520AF9319E9819A0073D96B /* addressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF9119E9819A0073D96B /* addressResolver.m */; };
 		A520AF9619E986F80073D96B /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9419E986F80073D96B /* check.png */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A51C9CC119EA36B100933751 /* MyBikeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBikeAnnotation.swift; sourceTree = "<group>"; };
 		A520AF8E19E9819A0073D96B /* addressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressObject.h; path = Model/AddressResolver/addressObject.h; sourceTree = "<group>"; };
 		A520AF8F19E9819A0073D96B /* addressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressObject.m; path = Model/AddressResolver/addressObject.m; sourceTree = "<group>"; };
 		A520AF9019E9819A0073D96B /* addressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressResolver.h; path = Model/AddressResolver/addressResolver.h; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		A5BDA78D19E954D900481977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A51C9CC119EA36B100933751 /* MyBikeAnnotation.swift */,
 				F0480B8D19E9FA4D00C583A6 /* directions */,
 				F0D1444F19E9A82500DE1213 /* autocomplete */,
 				F0D1444819E9A4E000DE1213 /* nearStations */,
@@ -524,6 +527,7 @@
 				F0D1443B19E982D500DE1213 /* AFURLConnectionOperation.m in Sources */,
 				A520AFB019E9981F0073D96B /* ChooseTransportModeViewController.swift in Sources */,
 				F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */,
+				A51C9CC219EA36B100933751 /* MyBikeAnnotation.swift in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */,
 				F0D1444419E9968E00DE1213 /* nearBikesObject.m in Sources */,
