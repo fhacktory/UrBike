@@ -53,12 +53,12 @@
 
 - (void)addObjectToArray:(NSNumber *)latitude curLongitude:(NSNumber *)longitude address:(NSString *)address city:(NSString *)city
 {
-//    NSLog(@"%@, %@, %@, %@", address, longitude, latitude, city);
+    NSString *test = [[NSString alloc] initWithString:address];
     addressObject *addObject = [[addressObject alloc] init];
     [addObject setLat:latitude];
     [addObject setLon:longitude];
     [addObject setCity:city];
-    [addObject setAddress:address];
+    [addObject setAddress:test];
     [_addressArray addObject:addObject];
 }
 
@@ -80,10 +80,9 @@
         [city appendString:@"lyon"];
         [self addObjectToArray:lat curLongitude:lon address:concatAddress city:city];
     }
-    
+    [self testAddress];
     self.controller.listAddressAutocomplete = _addressArray;
     [self.controller printData];
-    [self testAddress];
 }
 
 -(void)testAddress
