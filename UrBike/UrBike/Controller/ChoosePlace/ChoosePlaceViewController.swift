@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ChoosePlaceViewController: UIViewController {
+class ChoosePlaceViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var inputSearchPlace: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,11 @@ class ChoosePlaceViewController: UIViewController {
     }
     
 
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.inputSearchPlace.resignFirstResponder()
+    }
+
+    
     @IBAction func goChooseTransportMode(sender: AnyObject) {
         
         self.performSegueWithIdentifier("goToChooseTransportModeView", sender: self)

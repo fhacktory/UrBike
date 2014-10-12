@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import AudioToolbox
 
 class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate, UISearchControllerDelegate {
 
@@ -19,14 +20,21 @@ class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MK
         self.mapView.userLocation.title = "I'm here !"
         
         if LocationToolBox.locationWorking() {
-            let mapRegion = MKCoordinateRegionMakeWithDistance(LocationToolBox.getUserLocation()!.location.coordinate, 2000, 2000)
+            let mapRegion = MKCoordinateRegionMakeWithDistance(LocationToolBox.getUserLocation()!.location.coordinate, 500, 500)
             self.mapView.setRegion(mapRegion, animated: true)
         }
+        
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "vibrate", userInfo: nil, repeats: true)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func vibrate() {
+        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate) );
     }
     
 }

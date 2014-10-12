@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51C9CC019EA0B2600933751 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */; };
 		A520AF9219E9819A0073D96B /* addressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF8F19E9819A0073D96B /* addressObject.m */; };
 		A520AF9319E9819A0073D96B /* addressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF9119E9819A0073D96B /* addressResolver.m */; };
 		A520AF9619E986F80073D96B /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9419E986F80073D96B /* check.png */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A520AF8E19E9819A0073D96B /* addressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressObject.h; path = Model/AddressResolver/addressObject.h; sourceTree = "<group>"; };
 		A520AF8F19E9819A0073D96B /* addressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressObject.m; path = Model/AddressResolver/addressObject.m; sourceTree = "<group>"; };
 		A520AF9019E9819A0073D96B /* addressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressResolver.h; path = Model/AddressResolver/addressResolver.h; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51C9CC019EA0B2600933751 /* AudioToolbox.framework in Frameworks */,
 				A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +191,7 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
+				A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */,
 				A5900C6819E9CB9E003351F8 /* UrBike-Bridging-Header.h */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
