@@ -124,9 +124,9 @@ public class MainFragment extends Fragment implements LocationListener, GooglePl
         long[] left = {0, 2000, 1000, 2000};
 
         if (mVibrator != null){
-            if (direction == ModelsTurn.RIGHT)
+            if (direction == ModelsTurn.LEFT)
                 mVibrator.vibrate(left, -1);
-            else if (direction == ModelsTurn.LEFT){
+            else if (direction == ModelsTurn.RIGHT){
                 mVibrator.vibrate(5000);
             }
         }
