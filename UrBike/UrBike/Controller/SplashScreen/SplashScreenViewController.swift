@@ -12,8 +12,13 @@ class SplashScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.checkEnabledToUseApplication()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -23,8 +28,7 @@ class SplashScreenViewController: UIViewController {
         
         if ReachabilityToolBox.hasConnectivity() {
             
-            
-            
+            self.performSegueWithIdentifier("goToChoosePlaceView", sender: self)
         } else {
             
             let alert = SCLAlertView()
@@ -33,7 +37,6 @@ class SplashScreenViewController: UIViewController {
                 println("clicked")
                 exit(0)
             }
-            
             alert.showError(self, title: "Ouuups", subTitle: "Vous n'avez pas de connexion internet.")
             
         }

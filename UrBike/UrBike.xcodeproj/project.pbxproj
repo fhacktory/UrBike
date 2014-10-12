@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51C9CC019EA0B2600933751 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */; };
 		A520AF9219E9819A0073D96B /* addressObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF8F19E9819A0073D96B /* addressObject.m */; };
 		A520AF9319E9819A0073D96B /* addressResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = A520AF9119E9819A0073D96B /* addressResolver.m */; };
+		A520AF9619E986F80073D96B /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9419E986F80073D96B /* check.png */; };
+		A520AF9719E986F80073D96B /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9519E986F80073D96B /* check@2x.png */; };
+		A520AF9919E9876B0073D96B /* background_map.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AF9819E9876B0073D96B /* background_map.png */; };
+		A520AFA319E9893F0073D96B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFA219E9893F0073D96B /* logo.png */; };
+		A520AFA519E98EC60073D96B /* ChoosePlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */; };
+		A520AFAC19E993D40073D96B /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFAA19E993D40073D96B /* checked.png */; };
+		A520AFAD19E993D40073D96B /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFAB19E993D40073D96B /* unchecked.png */; };
+		A520AFB019E9981F0073D96B /* ChooseTransportModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */; };
+		A520AFB219E99BB50073D96B /* checkmark_white.png in Resources */ = {isa = PBXBuildFile; fileRef = A520AFB119E99BB50073D96B /* checkmark_white.png */; };
+		A520AFB419E9A2DE0073D96B /* ItinaryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520AFB319E9A2DE0073D96B /* ItinaryMainViewController.swift */; };
 		A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E5E1619E975A4004237D3 /* MapKit.framework */; };
 		A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */; };
 		A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA76B19E954B100481977 /* AppDelegate.swift */; };
@@ -19,6 +30,8 @@
 		A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */; };
 		A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */; };
 		A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */; };
+		F0480B9019E9FA6700C583A6 /* directions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0480B8F19E9FA6700C583A6 /* directions.m */; };
+		F0480B9319E9FE9700C583A6 /* directionsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0480B9219E9FE9700C583A6 /* directionsObject.m */; };
 		F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442419E982D500DE1213 /* AFHTTPRequestOperation.m */; };
 		F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442619E982D500DE1213 /* AFHTTPRequestOperationManager.m */; };
 		F0D1443819E982D500DE1213 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442819E982D500DE1213 /* AFHTTPSessionManager.m */; };
@@ -28,6 +41,10 @@
 		F0D1443C19E982D500DE1213 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443119E982D500DE1213 /* AFURLRequestSerialization.m */; };
 		F0D1443D19E982D500DE1213 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443319E982D500DE1213 /* AFURLResponseSerialization.m */; };
 		F0D1443E19E982D500DE1213 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1443519E982D500DE1213 /* AFURLSessionManager.m */; };
+		F0D1444119E9918800DE1213 /* getNearBikes.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444019E9918800DE1213 /* getNearBikes.m */; };
+		F0D1444419E9968E00DE1213 /* nearBikesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444319E9968E00DE1213 /* nearBikesObject.m */; };
+		F0D1444B19E9A50E00DE1213 /* getNearStations.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1444A19E9A50E00DE1213 /* getNearStations.m */; };
+		F0D1445219E9A84B00DE1213 /* autoComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1445119E9A84B00DE1213 /* autoComplete.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +58,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A520AF8E19E9819A0073D96B /* addressObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressObject.h; path = Model/AddressResolver/addressObject.h; sourceTree = "<group>"; };
 		A520AF8F19E9819A0073D96B /* addressObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressObject.m; path = Model/AddressResolver/addressObject.m; sourceTree = "<group>"; };
 		A520AF9019E9819A0073D96B /* addressResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addressResolver.h; path = Model/AddressResolver/addressResolver.h; sourceTree = "<group>"; };
 		A520AF9119E9819A0073D96B /* addressResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addressResolver.m; path = Model/AddressResolver/addressResolver.m; sourceTree = "<group>"; };
+		A520AF9419E986F80073D96B /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = Assets/check.png; sourceTree = "<group>"; };
+		A520AF9519E986F80073D96B /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "Assets/check@2x.png"; sourceTree = "<group>"; };
+		A520AF9819E9876B0073D96B /* background_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_map.png; sourceTree = "<group>"; };
+		A520AFA219E9893F0073D96B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoosePlaceViewController.swift; path = Controller/ChoosePlace/ChoosePlaceViewController.swift; sourceTree = "<group>"; };
+		A520AFAA19E993D40073D96B /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		A520AFAB19E993D40073D96B /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseTransportModeViewController.swift; path = Controller/ChooseTransportMode/ChooseTransportModeViewController.swift; sourceTree = "<group>"; };
+		A520AFB119E99BB50073D96B /* checkmark_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark_white.png; sourceTree = "<group>"; };
+		A520AFB319E9A2DE0073D96B /* ItinaryMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItinaryMainViewController.swift; path = Controller/Itinary/ItinaryMainViewController.swift; sourceTree = "<group>"; };
 		A55E5E1619E975A4004237D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A55E5E1A19E977B2004237D3 /* LocationToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationToolBox.swift; path = Tools/Location/LocationToolBox.swift; sourceTree = "<group>"; };
+		A5900C6819E9CB9E003351F8 /* UrBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UrBike-Bridging-Header.h"; path = "UrBike/UrBike-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5BDA76619E954B100481977 /* UrBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA76A19E954B100481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BDA76B19E954B100481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,13 +84,16 @@
 		A5BDA77B19E954B200481977 /* UrBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BDA78019E954B200481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BDA78119E954B200481977 /* UrBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrBikeTests.swift; sourceTree = "<group>"; };
-		A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrBike-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5FB072F19E95C4C008FEF01 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Tools/Reachability/Reachability.h; sourceTree = "<group>"; };
 		A5FB073019E95C4C008FEF01 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Tools/Reachability/Reachability.m; sourceTree = "<group>"; };
 		A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReachabilityToolBox.swift; path = Tools/Reachability/ReachabilityToolBox.swift; sourceTree = "<group>"; };
 		A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Controller/SplashScreen/SplashScreenViewController.swift; sourceTree = "<group>"; };
 		A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = Github/SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		A5FB073A19E96A90008FEF01 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = Github/SCLAlertView/LICENCE; sourceTree = "<group>"; };
+		F0480B8E19E9FA6700C583A6 /* directions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directions.h; sourceTree = "<group>"; };
+		F0480B8F19E9FA6700C583A6 /* directions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = directions.m; sourceTree = "<group>"; };
+		F0480B9119E9FE9700C583A6 /* directionsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directionsObject.h; sourceTree = "<group>"; };
+		F0480B9219E9FE9700C583A6 /* directionsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = directionsObject.m; sourceTree = "<group>"; };
 		F0D1442319E982D500DE1213 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F0D1442419E982D500DE1213 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F0D1442519E982D500DE1213 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -81,6 +113,14 @@
 		F0D1443319E982D500DE1213 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		F0D1443419E982D500DE1213 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		F0D1443519E982D500DE1213 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F0D1443F19E9918800DE1213 /* getNearBikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getNearBikes.h; sourceTree = "<group>"; };
+		F0D1444019E9918800DE1213 /* getNearBikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getNearBikes.m; sourceTree = "<group>"; };
+		F0D1444219E9968E00DE1213 /* nearBikesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearBikesObject.h; sourceTree = "<group>"; };
+		F0D1444319E9968E00DE1213 /* nearBikesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearBikesObject.m; sourceTree = "<group>"; };
+		F0D1444919E9A50E00DE1213 /* getNearStations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getNearStations.h; sourceTree = "<group>"; };
+		F0D1444A19E9A50E00DE1213 /* getNearStations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getNearStations.m; sourceTree = "<group>"; };
+		F0D1445019E9A84B00DE1213 /* autoComplete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoComplete.h; sourceTree = "<group>"; };
+		F0D1445119E9A84B00DE1213 /* autoComplete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = autoComplete.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51C9CC019EA0B2600933751 /* AudioToolbox.framework in Frameworks */,
 				A55E5E1719E975A4004237D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,15 +143,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A520AF8D19E981820073D96B /* AddressResolver */ = {
+		A520AFA919E990EE0073D96B /* ChoosePlace */ = {
 			isa = PBXGroup;
 			children = (
-				A520AF8E19E9819A0073D96B /* addressObject.h */,
-				A520AF8F19E9819A0073D96B /* addressObject.m */,
-				A520AF9019E9819A0073D96B /* addressResolver.h */,
-				A520AF9119E9819A0073D96B /* addressResolver.m */,
+				A520AFA419E98EC60073D96B /* ChoosePlaceViewController.swift */,
 			);
-			name = AddressResolver;
+			name = ChoosePlace;
+			sourceTree = "<group>";
+		};
+		A520AFAE19E997D40073D96B /* ChooseTransportMode */ = {
+			isa = PBXGroup;
+			children = (
+				A520AFAF19E9981F0073D96B /* ChooseTransportModeViewController.swift */,
+			);
+			name = ChooseTransportMode;
+			sourceTree = "<group>";
+		};
+		A520AFB519E9AA340073D96B /* Itinary */ = {
+			isa = PBXGroup;
+			children = (
+				A520AFB319E9A2DE0073D96B /* ItinaryMainViewController.swift */,
+			);
+			name = Itinary;
 			sourceTree = "<group>";
 		};
 		A55E5E1819E975A9004237D3 /* Framework */ = {
@@ -132,7 +186,8 @@
 		A5BDA75D19E954B100481977 = {
 			isa = PBXGroup;
 			children = (
-				F0D1442219E982D500DE1213 /* AFNetworking */,
+				A51C9CBF19EA0B2600933751 /* AudioToolbox.framework */,
+				A5900C6819E9CB9E003351F8 /* UrBike-Bridging-Header.h */,
 				A5BDA76819E954B100481977 /* UrBike */,
 				A5BDA77E19E954B200481977 /* UrBikeTests */,
 				A5BDA76719E954B100481977 /* Products */,
@@ -151,8 +206,8 @@
 		A5BDA76819E954B100481977 /* UrBike */ = {
 			isa = PBXGroup;
 			children = (
+				F0D1442219E982D500DE1213 /* AFNetworking */,
 				A55E5E1819E975A9004237D3 /* Framework */,
-				A5FB072E19E95C4B008FEF01 /* UrBike-Bridging-Header.h */,
 				A5FB072C19E95B22008FEF01 /* Tools */,
 				A5BDA78F19E954EA00481977 /* Assets */,
 				A5BDA78E19E954E200481977 /* Controller */,
@@ -210,7 +265,11 @@
 		A5BDA78D19E954D900481977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A520AF8D19E981820073D96B /* AddressResolver */,
+				F0480B8D19E9FA4D00C583A6 /* directions */,
+				F0D1444F19E9A82500DE1213 /* autocomplete */,
+				F0D1444819E9A4E000DE1213 /* nearStations */,
+				F0D1444519E9A2F100DE1213 /* nearBikes */,
+				F0D1444719E9A3D200DE1213 /* address */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -218,6 +277,9 @@
 		A5BDA78E19E954E200481977 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A520AFB519E9AA340073D96B /* Itinary */,
+				A520AFAE19E997D40073D96B /* ChooseTransportMode */,
+				A520AFA919E990EE0073D96B /* ChoosePlace */,
 				A5FB072B19E95A76008FEF01 /* SplashScreen */,
 			);
 			name = Controller;
@@ -226,6 +288,13 @@
 		A5BDA78F19E954EA00481977 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A520AF9819E9876B0073D96B /* background_map.png */,
+				A520AF9419E986F80073D96B /* check.png */,
+				A520AFAA19E993D40073D96B /* checked.png */,
+				A520AFAB19E993D40073D96B /* unchecked.png */,
+				A520AF9519E986F80073D96B /* check@2x.png */,
+				A520AFA219E9893F0073D96B /* logo.png */,
+				A520AFB119E99BB50073D96B /* checkmark_white.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -266,6 +335,17 @@
 			name = SCLAlertView;
 			sourceTree = "<group>";
 		};
+		F0480B8D19E9FA4D00C583A6 /* directions */ = {
+			isa = PBXGroup;
+			children = (
+				F0480B8E19E9FA6700C583A6 /* directions.h */,
+				F0480B8F19E9FA6700C583A6 /* directions.m */,
+				F0480B9119E9FE9700C583A6 /* directionsObject.h */,
+				F0480B9219E9FE9700C583A6 /* directionsObject.m */,
+			);
+			name = directions;
+			sourceTree = "<group>";
+		};
 		F0D1442219E982D500DE1213 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,7 +369,48 @@
 				F0D1443419E982D500DE1213 /* AFURLSessionManager.h */,
 				F0D1443519E982D500DE1213 /* AFURLSessionManager.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = ../AFNetworking;
+			sourceTree = "<group>";
+		};
+		F0D1444519E9A2F100DE1213 /* nearBikes */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1443F19E9918800DE1213 /* getNearBikes.h */,
+				F0D1444019E9918800DE1213 /* getNearBikes.m */,
+				F0D1444219E9968E00DE1213 /* nearBikesObject.h */,
+				F0D1444319E9968E00DE1213 /* nearBikesObject.m */,
+			);
+			name = nearBikes;
+			sourceTree = "<group>";
+		};
+		F0D1444719E9A3D200DE1213 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				A520AF8E19E9819A0073D96B /* addressObject.h */,
+				A520AF8F19E9819A0073D96B /* addressObject.m */,
+				A520AF9019E9819A0073D96B /* addressResolver.h */,
+				A520AF9119E9819A0073D96B /* addressResolver.m */,
+			);
+			name = address;
+			sourceTree = "<group>";
+		};
+		F0D1444819E9A4E000DE1213 /* nearStations */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1444919E9A50E00DE1213 /* getNearStations.h */,
+				F0D1444A19E9A50E00DE1213 /* getNearStations.m */,
+			);
+			name = nearStations;
+			sourceTree = "<group>";
+		};
+		F0D1444F19E9A82500DE1213 /* autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1445019E9A84B00DE1213 /* autoComplete.h */,
+				F0D1445119E9A84B00DE1213 /* autoComplete.m */,
+			);
+			name = autocomplete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +462,7 @@
 				TargetAttributes = {
 					A5BDA76519E954B100481977 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = D7C48J3S5N;
 					};
 					A5BDA77A19E954B200481977 = {
 						CreatedOnToolsVersion = 6.0;
@@ -372,8 +494,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A520AF9619E986F80073D96B /* check.png in Resources */,
 				A5BDA77119E954B100481977 /* Main.storyboard in Resources */,
+				A520AFB219E99BB50073D96B /* checkmark_white.png in Resources */,
+				A520AFAD19E993D40073D96B /* unchecked.png in Resources */,
+				A520AFA319E9893F0073D96B /* logo.png in Resources */,
 				A5BDA77319E954B100481977 /* Images.xcassets in Resources */,
+				A520AFAC19E993D40073D96B /* checked.png in Resources */,
+				A520AF9719E986F80073D96B /* check@2x.png in Resources */,
+				A520AF9919E9876B0073D96B /* background_map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,20 +522,29 @@
 			files = (
 				F0D1443E19E982D500DE1213 /* AFURLSessionManager.m in Sources */,
 				F0D1443B19E982D500DE1213 /* AFURLConnectionOperation.m in Sources */,
+				A520AFB019E9981F0073D96B /* ChooseTransportModeViewController.swift in Sources */,
 				F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */,
 				A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */,
 				F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */,
+				F0D1444419E9968E00DE1213 /* nearBikesObject.m in Sources */,
+				F0D1445219E9A84B00DE1213 /* autoComplete.m in Sources */,
 				A5FB073119E95C4C008FEF01 /* Reachability.m in Sources */,
+				F0D1444B19E9A50E00DE1213 /* getNearStations.m in Sources */,
 				A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */,
+				A520AFA519E98EC60073D96B /* ChoosePlaceViewController.swift in Sources */,
 				F0D1443819E982D500DE1213 /* AFHTTPSessionManager.m in Sources */,
+				A520AFB419E9A2DE0073D96B /* ItinaryMainViewController.swift in Sources */,
 				A520AF9219E9819A0073D96B /* addressObject.m in Sources */,
 				A520AF9319E9819A0073D96B /* addressResolver.m in Sources */,
 				A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */,
 				F0D1443A19E982D500DE1213 /* AFSecurityPolicy.m in Sources */,
 				A55E5E1B19E977B2004237D3 /* LocationToolBox.swift in Sources */,
+				F0D1444119E9918800DE1213 /* getNearBikes.m in Sources */,
 				F0D1443C19E982D500DE1213 /* AFURLRequestSerialization.m in Sources */,
 				F0D1443919E982D500DE1213 /* AFNetworkReachabilityManager.m in Sources */,
 				F0D1443D19E982D500DE1213 /* AFURLResponseSerialization.m in Sources */,
+				F0480B9019E9FA6700C583A6 /* directions.m in Sources */,
+				F0480B9319E9FE9700C583A6 /* directionsObject.m in Sources */,
 				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +596,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -500,6 +639,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -523,10 +663,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UrBike/UrBike-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -537,10 +680,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UrBike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "UrBike/UrBike-Bridging-Header.h";
 			};
 			name = Release;

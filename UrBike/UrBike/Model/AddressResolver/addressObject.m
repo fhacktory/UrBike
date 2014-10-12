@@ -8,7 +8,6 @@
 
 #import "addressObject.h"
 
-@implementation adressObject
-
+@implementation addressObject
 
 @end

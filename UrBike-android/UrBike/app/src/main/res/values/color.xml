@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="green_button">#22C064</color>
+    <color name="green_button_overlay">#6622C064</color>
+    <color name="gray_title">#333333</color>
+    <color name="gray_separator">#CCCCCC</color>
+
+</resources>
