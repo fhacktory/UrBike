@@ -64,6 +64,8 @@
     _results = _results[@"routes"][0][@"legs"][0][@"steps"];
     for (id key in _results)
     {
+        NSString *test = key[@"maneuver"];
+         NSLog(@"TEST AYMEN %@", test);
         [self addObjectToArray:key[@"distance"][@"value"] duration:key[@"duration"][@"value"] destlat:key[@"end_location"][@"lat"] destlon:key[@"end_location"][@"lng"] maneuver:key[@"maneuver"]];
     }
     self.controller.listPointsDirection = _addressArray;

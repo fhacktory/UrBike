@@ -101,9 +101,12 @@ class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MK
             self.a.append(c1)
             
             let coordonnee: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-            
-            let title = "step"
-            let myDestinationAnnotation: MyBikeAnnotation = MyBikeAnnotation(title: title,  coordinate: coordonnee)
+            var title = (elem as directionsObject).maneuver
+
+            if title == nil {
+                title = "Step"
+            }
+                let myDestinationAnnotation: MyBikeAnnotation = MyBikeAnnotation(title: title,  coordinate: coordonnee)
             
             dispatch_async(dispatch_get_main_queue(), {
                 self.mapView.addAnnotation(myDestinationAnnotation)

@@ -358,7 +358,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-3a-7tT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="102" width="320" height="364"/>
+                                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 </variation>
                             </mapView>
                         </subviews>
