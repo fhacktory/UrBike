@@ -44,7 +44,7 @@
 
 -(void)testAddress
 {
-    NSLog(@"Resultats: %ld", [_addressArray count]);
+    NSLog(@"Resultats: %ld", (unsigned long)[_addressArray count]);
 //        for (nearBikesObject *key in _addressArray)
 //        {
 //            NSLog(@"%@, %@, %@, %@, %@", key.name, key.lon, key.lat, key.bikes, key.freeSpace);
