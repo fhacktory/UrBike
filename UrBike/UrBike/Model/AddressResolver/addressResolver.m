@@ -8,11 +8,13 @@
 
 #import "addressResolver.h"
 #import "addressObject.h"
+#import "UrBike-Swift.h"
 
 @implementation addressResolver
 
--(void)getAddress:(NSString *)baseAdress
+-(void)getAddress:(NSString *)baseAdress andViewController:(ItinaryMainViewController *)controller
 {
+    self.controller = controller;
     //baseAdress = [baseAdress stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
     baseAdress = [baseAdress stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSData *data = [baseAdress dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
@@ -78,12 +80,15 @@
         [city appendString:@"lyon"];
         [self addObjectToArray:lat curLongitude:lon address:concatAddress city:city];
     }
+    
+    self.controller.listAddressAutocomplete = _addressArray;
+    [self.controller printData];
     [self testAddress];
 }
 
 -(void)testAddress
 {
-    NSLog(@"Resultats: %ld", [_addressArray count]);
+    NSLog(@"Resultats: %ld",(unsigned long) [_addressArray count]);
 //    for (addressObject *key in _addressArray)
 //    {
 //        NSLog(@"%@, %@, %@, %@", key.address, key.lon, key.lat, key.city);

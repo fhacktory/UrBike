@@ -13,6 +13,7 @@ import AudioToolbox
 class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate, UISearchControllerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    var listAddressAutocomplete: NSMutableSet?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,17 @@ class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MK
             self.mapView.setRegion(mapRegion, animated: true)
         }
         
+        let addr = addressResolver()
+        addr.getAddress("La cordée", andViewController: self)
+        
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "vibrate", userInfo: nil, repeats: true)
 
+    }
+    
+    func printData() {
+        
+        println("AYMEN TEST \(listAddressAutocomplete!)")
+        
     }
 
     override func didReceiveMemoryWarning() {
