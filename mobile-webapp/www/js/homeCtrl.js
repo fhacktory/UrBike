@@ -8,7 +8,7 @@ angular.module('starter')
         $state.go("navigationType");
     }
 
-    $scope.where = "rue jeanne d'arc Lyon"
+    // $scope.where = "rue jeanne d'arc Lyon"
 
     var geocoder = new google.maps.Geocoder();
     $scope.$watch("where", function(address) {
