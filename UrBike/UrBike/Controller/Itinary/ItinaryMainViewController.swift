@@ -104,7 +104,11 @@ class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MK
             var title = (elem as directionsObject).maneuver
 
             if title == nil {
-                title = "Step"
+                title = ""
+            } else if title == "turn-right" {
+                title = "Tourner à droite"
+            } else {
+                title = "Tourner à gauche"
             }
                 let myDestinationAnnotation: MyBikeAnnotation = MyBikeAnnotation(title: title,  coordinate: coordonnee)
             
