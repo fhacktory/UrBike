@@ -1,0 +1,27 @@
+<ion-view title="Navigation">
+    <ion-pane>
+        <div class="topNavigation">
+            <p class="distance">{{directions.legs[0].distance.text}}</p>
+            <div class="row">
+                <div class="col">{{directions.legs[0].end_address}}</div>
+                <div class="col">{{directions.legs[0].duration.text}}</div>
+            </div>
+        </div>
+        <ui-gmap-google-map center="map.center" zoom="map.zoom" control="gmap" events="mapevent">
+            <ui-gmap-marker idKey="ownPosition" coords="ownPosition" options="draggableMarker"></ui-gmap-marker>
+            <ui-gmap-marker idKey="destination" coords="destination"></ui-gmap-marker>
+            <ui-gmap-polyline path="path" ng-if="path"></ui-gmap-polyline>
+        </ui-gmap-google-map>
+        <div class="bottomNavigation row">
+            <div class="col col-25">
+                <img class="navigationArrow" ng-src="img/left_arrow.png" ng-show="step == 'left'">
+                <img class="navigationArrow" ng-src="img/right_arrow.png" ng-show="step == 'right'">
+            </div>
+            <div class="col col-center">
+                <p ng-show="step == 'left'">Tournez à gauche</p>
+                <p ng-show="step == 'right'">Tournez à droite</p>
+                <p>Dans {{distanceToStep | number:0}} m.</p>
+            </div>
+        </div>
+    </ion-pane>
+</ion-view>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>UrBike</title>
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/lodash.js"></script>
+    <script src="lib/bluebird.js"></script>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/angular-google-maps.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/typeCtrl.js"></script>
+    <script src="js/navigationCtrl.js"></script>
+    <script src="js/directionsService.js"></script>
+  </head>
+  <body>
+    <ion-nav-bar class="nav-title-slide-ios7" ng-hide="hideNavBar">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+  </body>
+</html>

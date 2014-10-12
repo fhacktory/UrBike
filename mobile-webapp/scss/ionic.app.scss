@@ -1,0 +1,110 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "OpenSans", sans-serif;
+}
+.bar-header {
+    border-bottom: 1px solid #cccccc;
+}
+img {
+    max-width: 100%;
+}
+.whereView {
+    background-image: url("../img/background_map.png");
+    background-size: cover;
+}
+.whereTitle {
+    color: #fff;
+    text-align: center;
+}
+.whereInput {
+    background-color: transparent;
+    border-bottom: 1px solid white !important;
+    color: white !important;
+}
+.bestResult {
+    color: white;
+    span {
+        font-size: 0.9em;
+        display: block;
+    }
+}
+.typeChoices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.typeChoice {
+    text-align: center;
+}
+.titleChoice {
+    text-transform: uppercase;
+    font-family: "OpenSans", sans-serif;
+    font-size: 1.4em;
+}
+.checkType {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/unchecked.png");
+    display: block;
+    margin: auto;
+    background-size: cover;
+    margin-bottom: 15px;
+    transition: 0.2s all ease;
+    &.checked {
+        background-image: url("../img/checked.png");
+    }
+}
+.angular-google-map, .angular-google-map-container {
+    height: 100%;
+}
+.bottomNavigation {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.topNavigation {
+    position: absolute;
+    top: 44px;
+    z-index: 10;
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    padding: 15px 0 0;
+    width: 100%;
+    .distance {
+        font-size: 2em;
+    }
+}
