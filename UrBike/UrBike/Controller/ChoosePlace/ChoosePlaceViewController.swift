@@ -12,7 +12,8 @@ class ChoosePlaceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let test = directions();
+        test.getAddress(45.760996, curLongitude: 4.857910, destlat: 45.770487, destlon: 4.863274)
         // Do any additional setup after loading the view.
     }
 

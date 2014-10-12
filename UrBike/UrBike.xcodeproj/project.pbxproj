@@ -29,6 +29,8 @@
 		A5FB073319E95E57008FEF01 /* ReachabilityToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073219E95E57008FEF01 /* ReachabilityToolBox.swift */; };
 		A5FB073719E95F4A008FEF01 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */; };
 		A5FB073919E96A7E008FEF01 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */; };
+		F0480B9019E9FA6700C583A6 /* directions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0480B8F19E9FA6700C583A6 /* directions.m */; };
+		F0480B9319E9FE9700C583A6 /* directionsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0480B9219E9FE9700C583A6 /* directionsObject.m */; };
 		F0D1443619E982D500DE1213 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442419E982D500DE1213 /* AFHTTPRequestOperation.m */; };
 		F0D1443719E982D500DE1213 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442619E982D500DE1213 /* AFHTTPRequestOperationManager.m */; };
 		F0D1443819E982D500DE1213 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D1442819E982D500DE1213 /* AFHTTPSessionManager.m */; };
@@ -86,6 +88,10 @@
 		A5FB073619E95F4A008FEF01 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashScreenViewController.swift; path = Controller/SplashScreen/SplashScreenViewController.swift; sourceTree = "<group>"; };
 		A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = Github/SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		A5FB073A19E96A90008FEF01 /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENCE; path = Github/SCLAlertView/LICENCE; sourceTree = "<group>"; };
+		F0480B8E19E9FA6700C583A6 /* directions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directions.h; sourceTree = "<group>"; };
+		F0480B8F19E9FA6700C583A6 /* directions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = directions.m; sourceTree = "<group>"; };
+		F0480B9119E9FE9700C583A6 /* directionsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = directionsObject.h; sourceTree = "<group>"; };
+		F0480B9219E9FE9700C583A6 /* directionsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = directionsObject.m; sourceTree = "<group>"; };
 		F0D1442319E982D500DE1213 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F0D1442419E982D500DE1213 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F0D1442519E982D500DE1213 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -134,17 +140,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A520AF8D19E981820073D96B /* AddressResolver */ = {
-			isa = PBXGroup;
-			children = (
-				F0D1444F19E9A82500DE1213 /* autocomplete */,
-				F0D1444819E9A4E000DE1213 /* nearStations */,
-				F0D1444519E9A2F100DE1213 /* nearBikes */,
-				F0D1444719E9A3D200DE1213 /* address */,
-			);
-			name = AddressResolver;
-			sourceTree = "<group>";
-		};
 		A520AFA919E990EE0073D96B /* ChoosePlace */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +261,11 @@
 		A5BDA78D19E954D900481977 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A520AF8D19E981820073D96B /* AddressResolver */,
+				F0480B8D19E9FA4D00C583A6 /* directions */,
+				F0D1444F19E9A82500DE1213 /* autocomplete */,
+				F0D1444819E9A4E000DE1213 /* nearStations */,
+				F0D1444519E9A2F100DE1213 /* nearBikes */,
+				F0D1444719E9A3D200DE1213 /* address */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,6 +329,17 @@
 				A5FB073819E96A7E008FEF01 /* SCLAlertView.swift */,
 			);
 			name = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		F0480B8D19E9FA4D00C583A6 /* directions */ = {
+			isa = PBXGroup;
+			children = (
+				F0480B8E19E9FA6700C583A6 /* directions.h */,
+				F0480B8F19E9FA6700C583A6 /* directions.m */,
+				F0480B9119E9FE9700C583A6 /* directionsObject.h */,
+				F0480B9219E9FE9700C583A6 /* directionsObject.m */,
+			);
+			name = directions;
 			sourceTree = "<group>";
 		};
 		F0D1442219E982D500DE1213 /* AFNetworking */ = {
@@ -529,6 +539,8 @@
 				F0D1443C19E982D500DE1213 /* AFURLRequestSerialization.m in Sources */,
 				F0D1443919E982D500DE1213 /* AFNetworkReachabilityManager.m in Sources */,
 				F0D1443D19E982D500DE1213 /* AFURLResponseSerialization.m in Sources */,
+				F0480B9019E9FA6700C583A6 /* directions.m in Sources */,
+				F0480B9319E9FE9700C583A6 /* directionsObject.m in Sources */,
 				A5BDA76C19E954B100481977 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +592,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -622,6 +635,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
