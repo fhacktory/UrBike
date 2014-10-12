@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.app.urbike.urbike.ModelsTurn;
 import com.app.urbike.urbike.R;
@@ -136,17 +137,34 @@ public class MainFragment extends Fragment implements LocationListener, GooglePl
         float[] result = new float[3];
 //        float[] diff = new float[3];
 //        LatLng nextPoint;
+        float dist = 0;
+        Location myLocation = new Location("");
+        Location point = new Location("");
 
+        myLocation.setLatitude(location.latitude);
+        myLocation.setLongitude(location.longitude);
         for (int i = 0; i < mTurnVibrate.size(); i++){
             LatLng distance = mTurnVibrate.get(i).getmPosition();
-            Location.distanceBetween(location.latitude, location.longitude, distance.latitude, distance.longitude, result);
-            if (result[0] <= 50.0 && mTurnVibrate.get(i).getmDirection() != ModelsTurn.NONE && i + 1 < mTurnVibrate.size()) {
+            point.setLatitude(distance.latitude);
+            point.setLongitude(distance.longitude);
+
+            dist = myLocation.distanceTo(point);
+            //Toast.makeText(getActivity(), String.valueOf(myLocation.distanceTo(point)), Toast.LENGTH_SHORT).show();
+ //           Location.distanceBetween(location.latitude, location.longitude, distance.latitude, distance.longitude, result);
+
+            //if (result[0] <= 20.0 && mTurnVibrate.get(i).getmDirection() != ModelsTurn.NONE && i + 1 < mTurnVibrate.size()) {
 //                nextPoint = mTurnVibrate.get(i + 1).getmPosition();
 //                Location.distanceBetween(distance.latitude, distance.longitude, nextPoint.latitude, nextPoint.longitude, diff);
 //                Location.distanceBetween(location.latitude, location.longitude, nextPoint.latitude, nextPoint.longitude, result);
 //                if (result[0] > diff[0]) {
-                    vibrate(mTurnVibrate.get(i + 1).getmDirection());
+                //Toast.makeText(getActivity(), mTurnVibrate.get(i).getmDir() + " " + String.valueOf(i) + " Result : " + String.valueOf(result[0]), Toast.LENGTH_SHORT).show();
+                    //vibrate(mTurnVibrate.get(i).getmDirection());
+
 //                }
+            //}
+            if (dist <= 50 && mTurnVibrate.get(i).getmDirection() != ModelsTurn.NONE){
+                Toast.makeText(getActivity(), String.valueOf(myLocation.distanceTo(point)), Toast.LENGTH_SHORT).show();
+                vibrate(mTurnVibrate.get(i).getmDirection());
             }
         }
     }
@@ -207,12 +225,16 @@ public class MainFragment extends Fragment implements LocationListener, GooglePl
                     else if (turn.contains("right"))
                         z = ModelsTurn.RIGHT;
                     else
-                        z = ModelsTurn.NONE;
+                        z = ModelsTurn.RIGHT;
                 }
-                else
+                else {
                     z = ModelsTurn.NONE;
+                    turn = "none";
+                }
                 object = object.getJSONObject("start_location");
-                mTurnVibrate.add(new ModelsTurn(new LatLng(object.getDouble("lat"), object.getDouble("lng")), z));
+                mTurnVibrate.add(new ModelsTurn(new LatLng(object.getDouble("lat"), object.getDouble("lng")), z, turn));
+                turn = "";
+                z = ModelsTurn.NONE;
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -252,11 +274,6 @@ public class MainFragment extends Fragment implements LocationListener, GooglePl
         return poly;
     }
 
-
-    private void makePath(){
-
-        mFakePosition = mMap.addMarker(new MarkerOptions().position(mTurn.get(0)));
-    }
 
     @Override
     public void onMapLongClick(LatLng latLng) {

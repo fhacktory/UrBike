@@ -11,25 +11,23 @@ public class ModelsTurn {
     public static final int NONE = 3;
     private LatLng mPosition;
     private int mDirection;
+    private String mDir;
 
-    public ModelsTurn(LatLng position, int direction){
+    public ModelsTurn(LatLng position, int direction, String dir){
         this.mPosition = position;
         this.mDirection = direction;
+        this.mDir = dir;
     }
 
     public int getmDirection() {
         return mDirection;
     }
 
-    public void setmDirection(int mDirection) {
-        this.mDirection = mDirection;
-    }
-
     public LatLng getmPosition() {
         return mPosition;
     }
 
-    public void setmPosition(LatLng mPosition) {
-        this.mPosition = mPosition;
+    public String getmDir() {
+        return mDir;
     }
 }
