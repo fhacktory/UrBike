@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ChoosePlaceViewController: UIViewController, UITextFieldDelegate {
+class ChoosePlaceViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var inputSearchPlace: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    var listAddressAutocomplete: NSMutableSet?
+    let addr = addressResolver()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let addr = addressResolver()
+        addr.getAddress("Cours de la ", andViewController: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,14 +35,67 @@ class ChoosePlaceViewController: UIViewController, UITextFieldDelegate {
         
         self.performSegueWithIdentifier("goToChooseTransportModeView", sender: self)
     }
-    /*
-    // MARK: - Navigation
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        println("index section == \(indexPath.section)")
+        var cell: UITableViewCell? = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as? UITableViewCell
+        
+        if self.listAddressAutocomplete != nil {
+            cell!.textLabel!.text = (self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).address
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        return cell!
     }
-    */
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if self.listAddressAutocomplete != nil {
+            return self.listAddressAutocomplete!.count
+        } else {
+            return 1
+        }
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+       return 1
+    }
+    
+    func printData() {
+        
+        if self.listAddressAutocomplete != nil {
+        
+
+            dispatch_async(dispatch_get_main_queue(), {
+                self.tableView.reloadData()
+            })
+        }
+        
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        println("CLICK")
+        self.tableView.hidden = false
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        var searchStr = (textField.text as NSString).stringByReplacingCharactersInRange(range, withString: string)
+        addr.getAddress(searchStr, andViewController: self)
+
+        return true
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.inputSearchPlace.text =  (self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).address
+        let lat = (self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).lat.floatValue
+        let long = (self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).lon.floatValue
+        self.tableView.hidden = true
+        NSUserDefaults.standardUserDefaults().setObject((self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).address, forKey: "place")
+        NSUserDefaults.standardUserDefaults().setObject((self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).lat.floatValue, forKey: "lat")
+        NSUserDefaults.standardUserDefaults().setObject((self.listAddressAutocomplete!.allObjects[indexPath.row] as addressObject).lon.floatValue, forKey: "lon")
+
+    }
+
 
 }

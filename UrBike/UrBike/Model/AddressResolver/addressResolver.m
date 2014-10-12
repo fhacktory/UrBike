@@ -12,7 +12,7 @@
 
 @implementation addressResolver
 
--(void)getAddress:(NSString *)baseAdress andViewController:(ItinaryMainViewController *)controller
+-(void)getAddress:(NSString *)baseAdress andViewController:(ChoosePlaceViewController *)controller
 {
     self.controller = controller;
     //baseAdress = [baseAdress stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
@@ -24,7 +24,7 @@
     if (self.baseRequest == nil)
     {
         self.baseRequest = [[NSMutableString alloc] init];
-        [self.baseRequest appendString:@"http://maps.googleapis.com/maps/api/geocode/json?address="];
+        [self.baseRequest appendString:@"http://maps.googleapis.com/maps/api/geocode/json?&components=country:FR&address="];
     }
     NSMutableString *urlRequest = [[NSMutableString alloc] init];
     [urlRequest appendString:self.baseRequest];
@@ -93,5 +93,7 @@
 //        NSLog(@"%@, %@, %@, %@", key.address, key.lon, key.lat, key.city);
 //    }
 }
+
+
 
 @end

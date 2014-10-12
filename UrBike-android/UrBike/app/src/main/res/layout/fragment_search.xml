@@ -5,6 +5,7 @@
     android:background="@drawable/background_map"
     tools:context="com.app.urbike.urbike.Fragment.SearchFragment">
     <ImageView
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:id="@+id/logo"
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
+        android:text="Rue de la Moselle, Lyon"
         android:background="@drawable/edittext_landing"
         android:hint="@string/destination"
         android:layout_marginTop="@dimen/below_logo"
@@ -32,11 +34,11 @@
         android:layout_height="50dp"
         android:textIsSelectable="false"
         android:singleLine="true"/>
-    <ImageButton
-        android:id="@+id/button_ok_1"
-        android:src="@drawable/checkmark"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/button_landing"
-        android:layout_width="match_parent"
-        android:layout_height="75dp" />
+        <ImageButton
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_landing"
+            android:id="@+id/button_ok_1"
+            android:src="@drawable/checkmark"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
 </RelativeLayout>
