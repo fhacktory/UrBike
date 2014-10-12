@@ -29,7 +29,6 @@ class ItinaryMainViewController: UIViewController, CLLocationManagerDelegate, MK
         addr.getAddress("La cordée", andViewController: self)
         
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "vibrate", userInfo: nil, repeats: true)
-
     }
     
     func printData() {
