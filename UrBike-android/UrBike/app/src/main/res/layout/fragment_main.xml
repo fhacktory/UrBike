@@ -3,9 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity$PlaceholderFragment">
-
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:background="@color/gray_title"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_transport"/>
+        <TextView
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/time"
+            android:layout_below="@id/distance"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
+        android:layout_below="@id/header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>

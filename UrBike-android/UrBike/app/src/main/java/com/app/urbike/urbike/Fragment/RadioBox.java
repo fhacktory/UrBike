@@ -5,11 +5,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 
+import com.app.urbike.urbike.Activity.MainActivity;
 import com.app.urbike.urbike.R;
 
-public class RadioBox extends Fragment implements RadioButton.OnClickListener {
+import static android.view.View.OnClickListener;
+
+public class RadioBox extends Fragment implements OnClickListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -18,6 +22,8 @@ public class RadioBox extends Fragment implements RadioButton.OnClickListener {
     private RadioButton mRadio1;
     private RadioButton mRadio2;
     private RadioButton mRadio3;
+    private ImageButton mValid;
+    private MainActivity mActivity;
     private View mView;
 
     public static RadioBox newInstance(String param1, String param2) {
@@ -45,9 +51,12 @@ public class RadioBox extends Fragment implements RadioButton.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_radio_box, container, false);
+        mActivity = (MainActivity)getActivity();
         mRadio1 = (RadioButton)mView.findViewById(R.id.radio_1);
         mRadio2 = (RadioButton)mView.findViewById(R.id.radio_2);
         mRadio3 = (RadioButton)mView.findViewById(R.id.radio_3);
+        mValid = (ImageButton)mView.findViewById(R.id.button_ok_2);
+        mValid.setOnClickListener(this);
         mRadio1.setOnClickListener(this);
         mRadio2.setOnClickListener(this);
         mRadio3.setOnClickListener(this);
@@ -61,13 +70,17 @@ public class RadioBox extends Fragment implements RadioButton.OnClickListener {
             mRadio2.setChecked(false);
             mRadio3.setChecked(false);
         }
-        else if (v == mRadio2){
+        if (v == mRadio2){
             mRadio1.setChecked(false);
             mRadio3.setChecked(false);
         }
-        else {
+        if (v == mRadio3){
             mRadio1.setChecked(false);
             mRadio2.setChecked(false);
         }
+        if (v == mValid){
+            mActivity.swipeNextView();
+        }
+
     }
 }

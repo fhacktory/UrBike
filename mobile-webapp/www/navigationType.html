@@ -1,0 +1,26 @@
+<ion-view title="Mode de transport" class="typeView">
+    <ion-pane class="padding typeChoices">
+
+        <div class="typeChoice" ng-click="type = 'ownBike'">
+            <span class="checkType" ng-class="{checked: type == 'ownBike'}"></span>
+            <p class="titleChoice">J'ai mon vélo</p>
+            <p>Indiquez moi juste comment arriver à destination</p>
+        </div>
+
+        <div class="typeChoice" ng-click="type = 'getBike'">
+            <span class="checkType" ng-class="{checked: type == 'getBike'}"></span>
+            <p class="titleChoice">J'ai besoin d'un vélo</p>
+            <p>Trouvez moi le vélo en libre service le plus proche</p>
+        </div>
+
+        <div class="typeChoice" ng-click="type = 'putBike'">
+            <span class="checkType" ng-class="{checked: type == 'putBike'}"></span>
+            <p class="titleChoice">Je dois déposer un vélo</p>
+            <p>Trouvez moi la station libre la plus proche de ma destination</p>
+        </div>
+
+    </ion-pane>
+    <div class="bar bar-footer" ng-class="{'bar-dark': !type, 'bar-balanced': type}">
+      <div class="title" ng-click="goToNavigation()"><i class="ion-checkmark-round"></i></div>
+    </div>
+</ion-view>
